@@ -1,4 +1,4 @@
-# NEXT-TYPESCRIPT STARTER
+# CREATIVE NEWHAM
 
 ### What's Included
 
