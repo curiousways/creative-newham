@@ -7,7 +7,7 @@ const Nav = () => {
   return (
     <div className="container pt-[25px] pb-[35px] sm:py-[84px] relative">
       <Link href="/" passHref>
-        <a className="cursor-pointer" aria-label="Brand logo">
+        <a className="cursor-pointer max-w-[571px]" aria-label="Brand logo">
           <Image src={Logo} />
         </a>
       </Link>
