@@ -17,8 +17,14 @@
   }
 
   body {
-    background-image: url("/assets/images/background.svg");
-    @apply bg-blend-overlay min-h-screen bg-cn-blue text-white md:text-xl;
+    background-image: linear-gradient(
+        to bottom,
+        rgb(64, 46, 193, 0.7),
+        rgb(64, 46, 193, 0.7)
+      ),
+      url("/assets/images/background.svg");
+    @apply min-h-screen bg-cn-blue text-white md:text-xl;
+    /* bg-cn-blue bg-blend-overlay */
   }
 
   h2 {
