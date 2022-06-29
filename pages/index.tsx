@@ -3,13 +3,14 @@ import type { NextPage } from "next";
 import Link from "next/link";
 
 import Instagram from "@/components/Instagram";
+import Button from "@/components/Button";
+import Panel from "@/components/Panel";
 
 const Home: NextPage = () => {
   return (
     <main className="container">
-      <section className="space-y-6 xl:space-y-[83px] mb-[77px]">
-        <h2>What We Do</h2>
-        <div className="space-y-8 max-w-[646px] xl:ml-[224px]">
+      <div className="space-y-20">
+        <Panel title="What We Do">
           <p>
             The Creative Newham Alliance is an independent consortium of around
             70 arts, cultural, educational, social and voluntary organisations
@@ -26,51 +27,46 @@ const Home: NextPage = () => {
             partnerships, connections, dissemination of information and
             responsive programming.
           </p>
-        </div>
-      </section>
+        </Panel>
 
-      <section className="space-y-6 xl:space-y-[83px] mb-[77px]">
-        <h2>Membership</h2>
-        <div className="space-y-[52px] max-w-[646px] xl:ml-[224px]">
+        <Panel title="Membership">
           <p>
             We welcome creative / community / educational / social / voluntary
             organisations based (or working) in Newham who have an interest in
             the improvement of cultural mobility in the borough. Become a member
             and receive our quarterly newsletter.
           </p>
-          <Link href="/" passHref>
-            <a className="text-cn-blue text-base bg-cn-orange rounded-full pt-[7px] pb-2 px-4 inline-block hover:bg-white transition-colors duration-500">
-              Become a member
-            </a>
-          </Link>
-        </div>
-      </section>
+          <div className="pt-10">
+            <Button text="Become a member" />
+          </div>
+        </Panel>
 
-      <section className="space-y-6 xl:space-y-[83px]">
-        <h2>Contact</h2>
-        <div className="space-y-8 sm:space-y-0 sm:flex sm:space-x-[83px] max-w-[646px] xl:ml-[224px]">
-          <div>
-            <p className="text-cn-orange">Vicki Young </p>
-            <p>Creative Newham</p>
-            <p>Programme Manager</p>
+        <section className="space-y-6 md:space-y-[83px]">
+          <h2>Contact</h2>
+          <div className="space-y-8 sm:space-y-0 sm:flex sm:space-x-[83px] max-w-[646px] xl:ml-[224px]">
+            <div>
+              <p className="text-cn-orange">Vicki Young </p>
+              <p>Creative Newham</p>
+              <p>Programme Manager</p>
+            </div>
+            <div className="self-end">
+              <p>
+                <Link href="mailto:vicki@rosettaarts.org">
+                  vicki@rosettaarts.org
+                </Link>
+              </p>
+              <p>
+                <Link href="">
+                  <a className="flex space-x-2 items-center">
+                    <Instagram />
+                    <span>@creativenewham</span>
+                  </a>
+                </Link>
+              </p>
+            </div>
           </div>
-          <div className="self-end">
-            <p>
-              <Link href="mailto:vicki@rosettaarts.org">
-                vicki@rosettaarts.org
-              </Link>
-            </p>
-            <p>
-              <Link href="">
-                <a className="flex space-x-2 items-center">
-                  <Instagram />
-                  <span>@creativenewham</span>
-                </a>
-              </Link>
-            </p>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
   );
 };
