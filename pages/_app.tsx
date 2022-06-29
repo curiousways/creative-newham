@@ -47,14 +47,15 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <DefaultSeo
         title={siteTitle}
-        description="Enter description here"
+        description="The Creative Newham Alliance is an independent consortium of arts, cultural, educational, social and voluntary organisations"
         canonical={`${siteUrl}${router.asPath === "/" ? "" : router.asPath}`}
         openGraph={{
           type: "website",
           url: `${siteUrl}${router.asPath === "/" ? "" : router.asPath}`,
           site_name: siteTitle,
           title: siteTitle,
-          description: "Enter description here",
+          description:
+            "The Creative Newham Alliance is an independent consortium of arts, cultural, educational, social and voluntary organisations",
           images: [
             {
               url: "Enter social icon path here",

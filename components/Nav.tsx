@@ -4,7 +4,7 @@ import Logo from "./Logo";
 
 const Nav = () => {
   return (
-    <div className="container py-[84px]">
+    <div className="container py-[15px] md:py-[84px]">
       <Link href="/" passHref>
         <a className="cursor-pointer" aria-label="Brand logo">
           <Logo />

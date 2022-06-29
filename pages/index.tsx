@@ -7,7 +7,7 @@ import Instagram from "@/components/Instagram";
 const Home: NextPage = () => {
   return (
     <main className="container">
-      <section className="space-y-12 xl:space-y-[83px] mb-[77px]">
+      <section className="space-y-6 xl:space-y-[83px] mb-[77px]">
         <h2>What We Do</h2>
         <div className="space-y-8 max-w-[646px] xl:ml-[224px]">
           <p>
@@ -29,7 +29,7 @@ const Home: NextPage = () => {
         </div>
       </section>
 
-      <section className="space-y-12 xl:space-y-[83px] mb-[77px]">
+      <section className="space-y-6 xl:space-y-[83px] mb-[77px]">
         <h2>Membership</h2>
         <div className="space-y-[52px] max-w-[646px] xl:ml-[224px]">
           <p>
@@ -39,14 +39,14 @@ const Home: NextPage = () => {
             and receive our quarterly newsletter.
           </p>
           <Link href="/" passHref>
-            <a className="text-cn-blue text-base bg-cn-orange rounded-full pt-2 pb-[7px] px-4 inline-block hover:bg-white transition-colors duration-500">
+            <a className="text-cn-blue text-base bg-cn-orange rounded-full pt-[7px] pb-2 px-4 inline-block hover:bg-white transition-colors duration-500">
               Become a member
             </a>
           </Link>
         </div>
       </section>
 
-      <section className="space-y-12 xl:space-y-[83px]">
+      <section className="space-y-6 xl:space-y-[83px]">
         <h2>Contact</h2>
         <div className="space-y-8 sm:space-y-0 sm:flex sm:space-x-[83px] max-w-[646px] xl:ml-[224px]">
           <div>
