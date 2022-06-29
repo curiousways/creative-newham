@@ -24,17 +24,17 @@
       ),
       url("/assets/images/background.svg");
     background-position: 0 -70px;
-    @apply min-h-screen bg-cn-blue text-white md:text-xl;
-    /* bg-cn-blue bg-blend-overlay */
+    background-size: 200%;
+    @apply min-h-screen bg-cn-blue text-white md:text-xl pb-[100px];
   }
 
   h2 {
-    @apply text-cn-orange text-5xl md:text-[60px] leading-[60px];
+    @apply text-cn-orange text-4xl md:text-[60px] leading-[60px];
   }
 }
 
 @layer utilities {
   .container {
-    @apply px-12 xl:px-0 xl:ml-[108px] max-w-[865px];
+    @apply px-8 xl:px-0 xl:ml-[108px] max-w-[865px];
   }
 }
