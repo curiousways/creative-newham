@@ -52,12 +52,14 @@ const Home: NextPage = () => {
             <div className="self-end">
               <p>
                 <Link href="mailto:vicki@rosettaarts.org">
-                  vicki@rosettaarts.org
+                  <a className="hover:text-cn-orange transition-colors duration-300">
+                    vicki@rosettaarts.org
+                  </a>
                 </Link>
               </p>
-              <p>
+              <p className="group">
                 <Link href="">
-                  <a className="flex space-x-2 items-center">
+                  <a className="flex space-x-2 items-center group-hover:text-cn-orange transition-colors duration-300 text-white">
                     <Instagram />
                     <span>@creativenewham</span>
                   </a>

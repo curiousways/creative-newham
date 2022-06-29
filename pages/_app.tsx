@@ -58,7 +58,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             "The Creative Newham Alliance is an independent consortium of arts, cultural, educational, social and voluntary organisations",
           images: [
             {
-              url: "Enter social icon path here",
+              url: "/social.jpg",
               width: 1200,
               height: 630,
               alt: "Enter social image alt text here",
