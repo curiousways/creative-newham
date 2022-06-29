@@ -4,24 +4,30 @@
 
 @layer base {
   @font-face {
-    font-family: "font name";
-    src: url("/assets/fonts/MuseoSans300/font.woff2") format("woff2"),
-      url("/assets/fonts/MuseoSans300/font.woff") format("woff");
-    font-weight: font-weight;
+    font-family: "Mabry";
+    src: url("/assets/fonts/mabry-medium-pro.woff2") format("woff2"),
+      url("/assets/fonts/mabry-medium-pro.woff") format("woff");
+    font-weight: 500;
     font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "font name";
-    src: url("/assets/fonts/MuseoSans500/font.woff2") format("woff2"),
-      url("/assets/fonts/MuseoSans500/font.woff") format("woff");
-    font-weight: font-weight;
-    font-style: strong;
     font-display: swap;
   }
 
   html {
     scroll-behavior: smooth;
+  }
+
+  body {
+    background-image: url("/assets/images/background.svg");
+    @apply bg-blend-overlay min-h-screen bg-cn-blue text-white md:text-xl;
+  }
+
+  h2 {
+    @apply text-cn-orange text-5xl md:text-[60px] leading-[60px];
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply px-12 xl:px-0 xl:ml-[108px] max-w-[865px];
   }
 }
