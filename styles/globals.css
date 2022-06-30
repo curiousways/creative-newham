@@ -35,6 +35,6 @@
 
 @layer utilities {
   .container {
-    @apply px-8 md:px-0 md:ml-[108px] max-w-[865px];
+    @apply px-8 md:px-16 xl:px-0 xl:ml-[108px] max-w-[865px];
   }
 }

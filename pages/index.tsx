@@ -2,11 +2,17 @@ import type { NextPage } from "next";
 
 import Link from "next/link";
 
+import { motion } from "framer-motion";
+
+import { container, item } from "@/lib/animations";
+
 import Instagram from "@/components/Instagram";
 import Button from "@/components/Button";
 import Panel from "@/components/Panel";
 
 const Home: NextPage = () => {
+  let viewportConfig = { once: true };
+
   return (
     <main className="container">
       <div className="space-y-20">
@@ -41,15 +47,26 @@ const Home: NextPage = () => {
           </div>
         </Panel>
 
-        <section className="space-y-6 md:space-y-[83px]">
-          <h2>Contact</h2>
+        <motion.section
+          variants={container}
+          initial="hidden"
+          whileInView="visible"
+          className="space-y-6 md:space-y-[83px]"
+        >
+          <motion.h2 variants={item} viewport={viewportConfig}>
+            Contact
+          </motion.h2>
           <div className="space-y-8 sm:space-y-0 sm:flex sm:space-x-[83px] max-w-[646px] xl:ml-[224px]">
-            <div>
+            <motion.div variants={item} viewport={viewportConfig}>
               <p className="text-cn-orange">Vicki Young </p>
               <p>Creative Newham</p>
               <p>Programme Manager</p>
-            </div>
-            <div className="self-end">
+            </motion.div>
+            <motion.div
+              variants={item}
+              viewport={viewportConfig}
+              className="self-end"
+            >
               <p>
                 <Link href="mailto:vicki@rosettaarts.org">
                   <a className="hover:text-cn-orange transition-colors duration-300">
@@ -65,9 +82,9 @@ const Home: NextPage = () => {
                   </a>
                 </Link>
               </p>
-            </div>
+            </motion.div>
           </div>
-        </section>
+        </motion.section>
       </div>
     </main>
   );
