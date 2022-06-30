@@ -17,6 +17,7 @@ const Panel = ({ title, children }: PanelProps) => {
       variants={container}
       initial="hidden"
       whileInView="visible"
+      viewport={viewportConfig}
       className="space-y-6 md:space-y-[83px]"
     >
       <motion.h2 variants={item} viewport={viewportConfig}>

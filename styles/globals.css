@@ -31,6 +31,14 @@
   h2 {
     @apply text-cn-orange text-4xl md:text-[60px] leading-[60px];
   }
+
+  h3 {
+    @apply text-cn-orange text-2xl;
+  }
+
+  a {
+    @apply underline underline-offset-4 hover:text-cn-orange transition-colors duration-300;
+  }
 }
 
 @layer utilities {
