@@ -10,6 +10,8 @@ import Instagram from "@/components/Instagram";
 import Button from "@/components/Button";
 import Panel from "@/components/Panel";
 
+import { supporters } from "../data/data";
+
 const Home: NextPage = () => {
   let viewportConfig = { once: true };
 
@@ -80,7 +82,14 @@ const Home: NextPage = () => {
             <p>
               We identify training and employment opportunities for young people
               and adults, running programmes such as the Creative Newham{" "}
-              <Link href="">Cultural Producers programme.</Link>
+              <Link
+                href="https://rosettaarts.org/projects/creative-newham-cultural-producers-programme-2022-2023/ "
+                passHref
+              >
+                <a target="_blank" rel="noreferrer">
+                  Cultural Producers programme.
+                </a>
+              </Link>
             </p>
           </div>
           <div className="space-y-2">
@@ -98,42 +107,15 @@ const Home: NextPage = () => {
           <div className="space-y-2">
             <h3>Our Supporters</h3>
             <ul className="space-y-2">
-              <li>
-                <Link href="" target="_blank">
-                  Foundation for Future London
-                </Link>
-              </li>
-              <li>
-                <Link href="" target="_blank">
-                  Royal Docks
-                </Link>
-              </li>
-              <li>
-                <Link href="" target="_blank">
-                  London Borough of Newham
-                </Link>
-              </li>
-              <li>
-                <Link href="" target="_blank">
-                  Rosetta Arts
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="https://uk.westfield.com/stratfordcity"
-                  target="_blank"
-                >
-                  Westfield East Bank Creative Futures Fund
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="https://future.london/programme/westfield-east-bank-creative-futures-fund/"
-                  target="_blank"
-                >
-                  Westfield City Stratford above Foundation for Future London
-                </Link>
-              </li>
+              {supporters.map(({ name, link }) => (
+                <li key={name}>
+                  <Link href={link} passHref>
+                    <a target="_blank" rel="noreferrer">
+                      {name}
+                    </a>
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </Panel>
@@ -142,9 +124,9 @@ const Home: NextPage = () => {
           <p>
             We welcome creative, community, educational, social and voluntary
             organisations based (or working) in Newham who have an interest in
-            the improvement of cultural mobility in the borough. Membership is
-            free.
+            the improvement of cultural mobility in the borough.
           </p>
+          <p>Membership is free.</p>
           <p>
             To become a member and receive our quarterly newsletter, please
             click here.
