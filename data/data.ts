@@ -7,8 +7,8 @@ export const supporters = [
     name: "Westfield City Stratford above Foundation for Future London",
     link: "https://future.london/programme/westfield-east-bank-creative-futures-fund/",
   },
-  { name: "Foundation for Future London", link: "" },
-  { name: "Royal Docks", link: "" },
-  { name: "London Borough of Newham ", link: "" },
-  { name: "Rosetta Arts", link: "" },
+  { name: "Foundation for Future London", link: "/" },
+  { name: "Royal Docks", link: "/" },
+  { name: "London Borough of Newham ", link: "/" },
+  { name: "Rosetta Arts", link: "/" },
 ];

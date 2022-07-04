@@ -15,7 +15,7 @@ const Nav = () => {
     >
       <Link href="/" passHref>
         <a className="cursor-pointer max-w-[571px]" aria-label="Brand logo">
-          <Image src={Logo} />
+          <Image src={Logo} alt="Brand logo" />
         </a>
       </Link>
     </motion.div>
