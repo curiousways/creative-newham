@@ -132,7 +132,7 @@ const Home: NextPage = () => {
             click here.
           </p>
           <div className="pt-10">
-            <Button text="Become a member" />
+            <Button text="Become a member" link="/" />
           </div>
         </Panel>
 
@@ -163,7 +163,7 @@ const Home: NextPage = () => {
                 </Link>
               </p>
               <p className="group">
-                <Link href="">
+                <Link href="/">
                   <a className="flex space-x-2 items-center group-hover:text-cn-orange transition-colors duration-300 text-white no-underline">
                     <Instagram />
                     <span>@creativenewham</span>
