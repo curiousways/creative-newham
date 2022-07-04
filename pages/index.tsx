@@ -16,16 +16,16 @@ const Home: NextPage = () => {
   return (
     <main className="container">
       <div className="space-y-20">
+        <p className="text-xl md:text-2xl">
+          Creative Newham is an independent alliance of around 70 arts,
+          cultural, educational, social and voluntary organisations committed to
+          growing and strengthening cultural mobility in all its forms in
+          Newham. Our aim is to provide a strong and connected creative vision
+          for the borough whereby everyone can benefit from creative
+          opportunities - as makers, producers, leaders, audiences and
+          participants - whatever their background or circumstances.
+        </p>
         <Panel title="What We Do">
-          <p>
-            Creative Newham is an independent alliance of around 70 arts,
-            cultural, educational, social and voluntary organisations committed
-            to growing and strengthening cultural mobility in all its forms in
-            Newham. Our aim is to provide a strong and connected creative vision
-            for the borough whereby everyone can benefit from creative
-            opportunities - as makers, producers, leaders, audiences and
-            participants - whatever their background or circumstances.
-          </p>
           <p>
             We work to make Newham's creative vision real for everyone in the
             borough. We’ll make sure that cultural activities involve us all and
@@ -43,7 +43,7 @@ const Home: NextPage = () => {
             <p>
               We enable partners and agencies looking to work in Newham to
               engage with our extensive pan-borough creative network quickly to
-              identify opportunities and collaborate.
+              identify opportunities and work together.
             </p>
           </div>
           <div className="space-y-2">
@@ -73,9 +73,8 @@ const Home: NextPage = () => {
           <div className="space-y-2">
             <h3>Skills & employment</h3>
             <p>
-              We identify opportunities to improve training and employment
-              opportunities for young people and adults, running programmes such
-              as the Creative Newham{" "}
+              We identify training and employment opportunities for young people
+              and adults, running programmes such as the Creative Newham{" "}
               <Link href="">Cultural Producers programme.</Link>
             </p>
           </div>
@@ -95,16 +94,40 @@ const Home: NextPage = () => {
             <h3>Our Supporters</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="">Foundation for Future London</Link>
+                <Link href="" target="_blank">
+                  Foundation for Future London
+                </Link>
               </li>
               <li>
-                <Link href="">Royal Docks</Link>
+                <Link href="" target="_blank">
+                  Royal Docks
+                </Link>
               </li>
               <li>
-                <Link href="">London Borough of Newham</Link>
+                <Link href="" target="_blank">
+                  London Borough of Newham
+                </Link>
               </li>
               <li>
-                <Link href="">Rosetta Arts</Link>
+                <Link href="" target="_blank">
+                  Rosetta Arts
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://uk.westfield.com/stratfordcity"
+                  target="_blank"
+                >
+                  Westfield East Bank Creative Futures Fund
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://future.london/programme/westfield-east-bank-creative-futures-fund/"
+                  target="_blank"
+                >
+                  Westfield City Stratford above Foundation for Future London
+                </Link>
               </li>
             </ul>
           </div>
@@ -112,7 +135,7 @@ const Home: NextPage = () => {
 
         <Panel title="Membership">
           <p>
-            We welcome creative / community / educational / social / voluntary
+            We welcome creative, community, educational, social and voluntary
             organisations based (or working) in Newham who have an interest in
             the improvement of cultural mobility in the borough. Membership is
             free.
