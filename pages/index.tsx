@@ -132,7 +132,7 @@ const Home: NextPage = () => {
             click here.
           </p>
           <div className="pt-10">
-            <Button text="Become a member" link="/" />
+            <Button text="Become a member" link="http://eepurl.com/h5Tk2b" />
           </div>
         </Panel>
 
