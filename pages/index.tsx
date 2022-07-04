@@ -158,13 +158,17 @@ const Home: NextPage = () => {
               className="self-end"
             >
               <p>
-                <Link href="mailto:vicki@rosettaarts.org">
+                <Link href="mailto:vicki@rosettaarts.org" passHref>
                   <a className="no-underline">vicki@rosettaarts.org</a>
                 </Link>
               </p>
               <p className="group">
-                <Link href="/">
-                  <a className="flex space-x-2 items-center group-hover:text-cn-orange transition-colors duration-300 text-white no-underline">
+                <Link href="https://www.instagram.com/creativenewham/" passHref>
+                  <a
+                    className="flex space-x-2 items-center group-hover:text-cn-orange transition-colors duration-300 text-white no-underline"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <Instagram />
                     <span>@creativenewham</span>
                   </a>
