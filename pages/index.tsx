@@ -16,7 +16,12 @@ const Home: NextPage = () => {
   return (
     <main className="container">
       <div className="space-y-20">
-        <p className="text-xl md:text-2xl">
+        <motion.p
+          initial="hidden"
+          animate="visible"
+          variants={item}
+          className="text-xl md:text-2xl"
+        >
           Creative Newham is an independent alliance of around 70 arts,
           cultural, educational, social and voluntary organisations committed to
           growing and strengthening cultural mobility in all its forms in
@@ -24,7 +29,7 @@ const Home: NextPage = () => {
           for the borough whereby everyone can benefit from creative
           opportunities - as makers, producers, leaders, audiences and
           participants - whatever their background or circumstances.
-        </p>
+        </motion.p>
         <Panel title="What We Do">
           <p>
             We work to make Newham's creative vision real for everyone in the
