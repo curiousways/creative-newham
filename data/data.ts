@@ -4,7 +4,7 @@ export const supporters = [
     link: "https://uk.westfield.com/stratfordcity",
   },
   {
-    name: "Westfield City Stratford above Foundation for Future London",
+    name: "Westfield City Stratford",
     link: "https://future.london/programme/westfield-east-bank-creative-futures-fund/",
   },
   { name: "Foundation for Future London", link: "/" },
