@@ -9,7 +9,7 @@ export const supporters = [
   },
   {
     name: "Foundation for Future London",
-    link: "https://future.london/programme/westfield-east-bank-creative-futures-fund/",
+    link: "https://future.london/",
   },
   { name: "Royal Docks", link: "https://www.royaldocks.london/" },
   { name: "London Borough of Newham ", link: "https://www.newham.gov.uk/" },
