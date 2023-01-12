@@ -12,7 +12,7 @@ import Panel from "@/components/Panel";
 
 import { supporters } from "../data/data";
 
-const Home: NextPage = () => {
+const About: NextPage = () => {
   let viewportConfig = { once: true };
 
   return (
@@ -146,4 +146,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default About;

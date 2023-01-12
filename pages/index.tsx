@@ -45,7 +45,7 @@ const Home: NextPage = () => {
           </div>
           <div className="flex space-x-5">
             <div className="flex-1 xl:flex-none">
-              <Button text="Become a member" link="http://eepurl.com/h5Tk2b" />
+              <Button text="Become a member" link="/membership/" />
             </div>
             <div className="flex-1 xl:flex-none">
               <Button text="Member news" link="http://eepurl.com/h5Tk2b" />
