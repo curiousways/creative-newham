@@ -4,7 +4,7 @@ const nextConfig = {
   trailingSlash: true,
   env: {
     SITE_URL: "https://www.creativenewham.com",
-    SITE_TITLE: "The Creative Newham Alliance",
+    SITE_TITLE: "Creative Newham",
     FATHOM_ANALYTICS_ID: "TPQFBBUO",
   },
   images: {
