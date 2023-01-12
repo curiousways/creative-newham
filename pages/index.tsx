@@ -37,7 +37,7 @@ const Home: NextPage = () => {
         >
           <div className="flex space-x-5 mb-5 xl:mb-0">
             <div className="flex-1 xl:flex-none">
-              <Button text="What we do" link="" />
+              <Button text="What we do" link="/about/" />
             </div>
             <div className="flex-1 xl:flex-none">
               <Button text="Members &amp; Supporters" link="http://eepurl.com/h5Tk2b" />
@@ -52,7 +52,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </motion.div>
-        
+
       </div>
     </main>
   );
