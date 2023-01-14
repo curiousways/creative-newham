@@ -63,8 +63,11 @@ function MyApp({ Component, pageProps }: AppProps) {
           cardType: "summary_large_image",
         }}
       />
-      <Nav />
-      <Component {...pageProps} />
+      <div className="flex flex-col min-h-screen">
+        <Nav />
+        <Component {...pageProps} />
+        <Footer />
+      </div>        
     </>
   );
 }
