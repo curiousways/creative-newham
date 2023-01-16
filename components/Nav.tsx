@@ -11,6 +11,10 @@ const navItems = [
     href: '/about/',
   },
   {
+    name: 'Members',
+    href: '/members-and-supporters/',
+  },  
+  {
     name: 'News',
     href: '/news/',
   },  

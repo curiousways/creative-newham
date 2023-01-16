@@ -1,16 +1,7 @@
 import type { NextPage } from "next";
-
-import Link from "next/link";
-
 import { motion } from "framer-motion";
-
-import { container, item } from "@/lib/animations";
-
-import Instagram from "@/components/Instagram";
+import { item } from "@/lib/animations";
 import Button from "@/components/Button";
-import Panel from "@/components/Panel";
-
-import { supporters } from "../data/data";
 
 const Home: NextPage = () => {
   let viewportConfig = { once: true };
@@ -33,22 +24,22 @@ const Home: NextPage = () => {
           initial="hidden"
           animate="visible"
           variants={item}
-          className="flex flex-col xl:flex-row xl:space-x-5"
+          className="sm:flex flex-col xl:flex-row xl:space-x-5"
         >
-          <div className="flex space-x-5 mb-5 xl:mb-0">
-            <div className="flex-1 xl:flex-none">
+          <div className="sm:flex sm:space-x-5 mb-5 xl:mb-0">
+            <div className="flex-1 xl:flex-none mb-5 sm:mb-0">
               <Button text="What we do" link="/about/" />
             </div>
             <div className="flex-1 xl:flex-none">
-              <Button text="Members &amp; Supporters" link="http://eepurl.com/h5Tk2b" />
+              <Button text="Members &amp; Supporters" link="/members-and-supporters/" />
             </div>
           </div>
-          <div className="flex space-x-5">
-            <div className="flex-1 xl:flex-none">
+          <div className="sm:flex sm:space-x-5">
+            <div className="flex-1 xl:flex-none mb-5 sm:mb-0">
               <Button text="Become a member" link="/membership/" />
             </div>
             <div className="flex-1 xl:flex-none">
-              <Button text="Member news" link="http://eepurl.com/h5Tk2b" />
+              <Button text="News" link="/news/" />
             </div>
           </div>
         </motion.div>

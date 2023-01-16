@@ -1,11 +1,6 @@
 import type { NextPage } from "next";
-
-import Link from "next/link";
-
 import { motion } from "framer-motion";
-
-import { container, item } from "@/lib/animations";
-
+import { item } from "@/lib/animations";
 import Button from "@/components/Button";
 import Panel from "@/components/Panel";
 
@@ -28,17 +23,25 @@ const Membership: NextPage = () => {
       <div className="space-y-20">
 
         <Panel title="Membership">
-          <p>
-            To become a member and receive our quarterly newsletter, we ask that you are: 
-          </p>
-          <ul className="list-disc ml-10 space-y-4">
-            <li>a creative, community, educational, social or voluntary organisation based (or working) in Newham</li>
-            <li>interested in the improvement of cultural mobility in all its forms in Newham</li>
-          </ul>
 
-          <h3>Apply to join the CNA</h3>
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={item}
+            className="cn-text"
+          >
+            <p>
+              To become a member and receive our quarterly newsletter, we ask that you are: 
+            </p>
+            <ul>
+              <li>a creative, community, educational, social or voluntary organisation based (or working) in Newham</li>
+              <li>interested in the improvement of cultural mobility in all its forms in Newham</li>
+            </ul>
 
-          <form className="space-y-4">
+            <h3>Apply to join the CNA</h3>
+          </motion.div>
+
+          <form className="space-y-10">
 
             <div>
               <label>Are you based in Newham?</label>

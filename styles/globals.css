@@ -29,15 +29,7 @@
   }
 
   h2 {
-    @apply text-cn-orange text-4xl md:text-[60px] leading-[60px];
-  }
-
-  h3 {
-    @apply text-cn-orange text-2xl;
-  }
-
-  a {
-    @apply underline underline-offset-4 hover:text-cn-orange transition-colors duration-300;
+    @apply text-cn-orange text-4xl md:text-5xl;
   }
 }
 
@@ -49,4 +41,8 @@
   .container--wide {
     @apply px-8 md:px-16 xl:px-5 xl:ml-[108px] max-w-screen-xl;
   }  
+
+  .cn-text {
+    @apply marker:text-white prose lg:prose-xl prose-headings:text-cn-orange prose-p:leading-normal prose-ul:space-y-2 prose-ol:space-y-2 prose-a:underline prose-a:underline-offset-4 prose-a:hover:text-cn-orange prose-a:transition-colors prose-a:duration-300;
+  }
 }
