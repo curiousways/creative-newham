@@ -43,8 +43,8 @@ const Nav = () => {
       <div>
         <ul className="flex space-x-5 mt-2 sm:mt-5 xl:mt-0">
           {navItems.map((item) => (
-            <li>
-              <a key={item.name} href={item.href} className="text-white text-sm sm:text-lg hover:text-cn-orange">
+            <li key={item.name}>
+              <a href={item.href} className="text-white text-sm sm:text-lg hover:text-cn-orange">
                 {item.name}
               </a>
             </li>
