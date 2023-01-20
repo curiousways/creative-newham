@@ -57,19 +57,14 @@ export const steeringGroup = [
 
 export const supporters = [
   {
-    title: 'Foundation for Future London',
-    href: 'https://future.london/',
-    imageUrl: '/assets/images/foundation-for-future-london.png',
-  },
+    title: 'Royal Docks',
+    href: 'https://www.royaldocks.london/',
+    imageUrl: '/assets/images/royal-docks.png',
+  },  
   {
     title: 'London Borough of Newham',
     href: 'https://www.newham.gov.uk/',
     imageUrl: '/assets/images/newham.png',
-  },
-  {
-    title: 'Royal Docks',
-    href: 'https://www.royaldocks.london/',
-    imageUrl: '/assets/images/royal-docks.png',
   },
   {
     title: 'Rosetta Arts',

@@ -31,7 +31,7 @@ const Home: NextPage = () => {
               <Button text="What we do" link="/about/" />
             </div>
             <div className="flex-1 xl:flex-none">
-              <Button text="Members &amp; Supporters" link="/members-and-supporters/" />
+              <Button text="Supporters" link="/supporters/" />
             </div>
           </div>
           <div className="sm:flex sm:space-x-5">
