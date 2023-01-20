@@ -1,21 +1,33 @@
+import { useState } from 'react';
 import type { NextPage } from "next";
 import { motion } from "framer-motion";
 import { item } from "@/lib/animations";
-import Button from "@/components/Button";
 import Panel from "@/components/Panel";
-
-const locatons = [
-  { id: 'inNewhamYes', title: 'Yes' },
-  { id: 'inNewhamNo', title: 'No' },
-]
-
-const culturalMobilities = [
-  { id: 'culturalMobilityYes', title: 'Yes' },
-  { id: 'culturalMobilityNo', title: 'No' },
-]
 
 const Membership: NextPage = () => {
   let viewportConfig = { once: true };
+
+  const [inNewham, setInNewham] = useState("");
+  const [mobility, setMobility] = useState("");
+  const [showError, setShowError] = useState(false);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.name === "inNewham") {
+      setInNewham(e.target.value);
+    } else if (e.target.name === "mobility") {
+      setMobility(e.target.value);
+    }
+  }
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (inNewham !== "yes" || mobility !== "yes") {
+      setShowError(true);
+      console.log("showError: ", showError);
+    } else {
+      // submit form
+    }
+  }
 
   return (
     <main className="container">
@@ -38,58 +50,124 @@ const Membership: NextPage = () => {
               <li>interested in the improvement of cultural mobility in all its forms in Newham</li>
             </ul>
 
-            <h3>Apply to join the CNA</h3>
+            <h3>Apply to join Creative Newham</h3>
           </motion.div>
 
-          <form className="space-y-10">
+          <form className="space-y-10" onSubmit={handleSubmit}>
 
             <div>
               <label>Are you based in Newham?</label>
               <fieldset className="mt-4">
                 <legend className="sr-only">Based in Newham</legend>
                 <div className="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">
-                  {locatons.map((location) => (
-                    <div key={location.id} className="flex items-center">
-                      <input
-                        id={location.id}
-                        name="location"
-                        type="radio"
-                        className="h-4 w-4 border-white text-cn-orange focus:ring-cn-orange"
-                      />
-                      <label htmlFor={location.id} className="ml-3 block">
-                        {location.title}
-                      </label>
-                    </div>
-                  ))}
+                  <div className="flex items-center">
+                    <input
+                      name="inNewham"
+                      id="inNewhamYes"
+                      type="radio"
+                      value="yes"
+                      className="h-4 w-4 border-white text-cn-orange focus:ring-cn-orange"
+                      checked={inNewham === "yes"}
+                      onChange={handleChange}
+                    />
+                    <label htmlFor="inNewhamYes" className="ml-3 block">
+                      Yes
+                    </label>
+                  </div>
+
+                  <div className="flex items-center">
+                    <input
+                      name="inNewham"
+                      id="inNewhamNo"
+                      type="radio"
+                      value="no"
+                      className="h-4 w-4 border-white text-cn-orange focus:ring-cn-orange"
+                      checked={inNewham === "no"}
+                      onChange={handleChange}
+                    />
+                    <label htmlFor="inNewhamNo" className="ml-3 block">
+                      No
+                    </label>
+                  </div>
                 </div>
               </fieldset>
-            </div>
+            </div>        
 
             <div>
               <label>Are you interested in the improvement of cultural mobility in Newham?</label>
               <fieldset className="mt-4">
                 <legend className="sr-only">Culural Mobility</legend>
                 <div className="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">
-                  {culturalMobilities.map((culturalMobility) => (
-                    <div key={culturalMobility.id} className="flex items-center">
-                      <input
-                        id={culturalMobility.id}
-                        name="mobility"
-                        type="radio"
-                        className="h-4 w-4 border-white text-cn-orange focus:ring-cn-orange"
-                      />
-                      <label htmlFor={culturalMobility.id} className="ml-3 block">
-                        {culturalMobility.title}
-                      </label>
-                    </div>
-                  ))}
+                  <div className="flex items-center">
+                    <input
+                      name="mobility"
+                      id="mobilityYes"
+                      type="radio"
+                      value="yes"
+                      className="h-4 w-4 border-white text-cn-orange focus:ring-cn-orange"
+                      checked={mobility === "yes"}
+                      onChange={handleChange}
+                    />
+                    <label htmlFor="mobilityYes" className="ml-3 block">
+                      Yes
+                    </label>
+                  </div>
+
+                  <div className="flex items-center">
+                    <input
+                      name="mobility"
+                      id="mobilityNo"
+                      type="radio"
+                      value="no"
+                      className="h-4 w-4 border-white text-cn-orange focus:ring-cn-orange"
+                      checked={mobility === "no"}
+                      onChange={handleChange}
+                    />
+                    <label htmlFor="mobilityNo" className="ml-3 block">
+                      No
+                    </label>
+                  </div>                     
                 </div>
               </fieldset>
-            </div>        
+            </div>                
+
+            {/* <div>
+              <label>Are you interested in the improvement of cultural mobility in Newham?</label>
+              <fieldset className="mt-4">
+                <legend className="sr-only">Culural Mobility</legend>
+                <div className="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">
+                <div className="flex items-center">
+                    <input
+                      name="mobility"
+                      id="mobilityYes"
+                      type="radio"
+                      value="yes"
+                      className="h-4 w-4 border-white text-cn-orange focus:ring-cn-orange"
+                    />
+                    <label htmlFor="mobilityYes" className="ml-3 block">
+                      Yes
+                    </label>
+                  </div>
+
+                  <div className="flex items-center">
+                    <input
+                      name="mobility"
+                      id="mobilityNo"
+                      type="radio"
+                      value="no"
+                      className="h-4 w-4 border-white text-cn-orange focus:ring-cn-orange"
+                    />
+                    <label htmlFor="mobilityNo" className="ml-3 block">
+                      No
+                    </label>
+                  </div>                     
+                </div>
+              </fieldset>
+            </div>                  */}
                 
             <div>
               <label htmlFor="joiningReason" className="block mb-4">
-                What are your principal reasons for joining the CNA?
+                What are your principal reasons for joining Creative Newham?
               </label>
               <div className="mt-1">
                 <textarea
@@ -247,14 +325,21 @@ const Membership: NextPage = () => {
               </div>
               <div className="ml-3 text-sm">
                 <label htmlFor="newsletter">
-                  Tick the box to receive the CNA newsletter
+                  Tick the box to receive the Creative Newham newsletter
                 </label>
               </div>
             </div>        
             
             <div className="mt-5 inline-flex">
-              <Button text="Submit" link="#" />
+              <input
+                className="cn-btn" 
+                type="submit" 
+                value="Submit"
+                disabled={inNewham !== "yes" || mobility !== "yes"}
+              />
             </div>
+
+            {showError && <p className="text-red-500">You need to answer yes to both questions</p>}
 
           </form>
 

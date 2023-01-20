@@ -19,7 +19,7 @@ const About: NextPage = () => {
         <Panel title="Our story">
           <div className="cn-text">
             <p>
-              Creative Newham came into being in 2018, as a result of Arts Council England’s Creative People & Places opportunity, which Newham partners seized with enthusiasm across the borough. Through the process of developing this bid, lead organisation Rosetta Arts (who has a 29-year history of delivering community arts in Newham) brought together over 80 individuals representing over 60 organisations, all sharing a commitment to empowering borough residents to realise their full cultural and creative potential. In September 2019, Creative Newham was formalised and since then, the alliance has grown to XXX member organisations.
+              Creative Newham came into being in 2018, as a result of Arts Council England’s Creative People & Places opportunity, which Newham partners seized with enthusiasm across the borough. Through the process of developing this bid, lead organisation Rosetta Arts (who has a 29-year history of delivering community arts in Newham) brought together over 80 individuals representing over 60 organisations, all sharing a commitment to empowering borough residents to realise their full cultural and creative potential. In September 2019, Creative Newham was formalised and since then, the alliance has continued to grow.
             </p>
             <h3>Why Creative Newham?</h3>
             <p>
@@ -42,14 +42,14 @@ const About: NextPage = () => {
             <p>
               Over the next 10 years we hope to contribute to  a Newham where homegrown creative talent is recognised and rewarded both within and beyond the borough; where residents respect and value different cultures and are proud of their neighbourhood; and where people have the confidence and the opportunity to lead and enjoy a wide range of creative activities.              
             </p>
-            <h3>Make-up of Creative Newham</h3>
+            {/* <h3>Make-up of Creative Newham</h3>
             <p>
               Creative Newham’s steering group is Chaired by Sanaz Amidi, Chief Executive of Rosetta Arts, which meets quarterly and consists of representative from nine local community and creative organisations: Certain Blacks, Caramel Rock, Newham New Deal Partnership, Rosetta Arts, University College London, London Borough of Newham, the Royal Docks and Foundation for Future London. Its wider alliance is a more informal network of 80+ organisations that are interested in or share the Creative Newham vision.              
-            </p>
+            </p> */}
           </div>
         </Panel>
 
-        <Panel title="What we do">
+        {/* <Panel title="What we do">
           <div className="cn-text">
             <p>
               We work to make Newham's creative vision real for everyone in the
@@ -118,7 +118,7 @@ const About: NextPage = () => {
             </p>
 
           </div>
-        </Panel>   
+        </Panel>    */}
         
       </motion.div>
     </main>
