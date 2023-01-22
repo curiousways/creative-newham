@@ -34,8 +34,8 @@ const Nav = () => {
     >
       <div>
         <Link href="/" passHref>
-          <a className="cursor-pointer max-w-[571px]" aria-label="Brand logo">
-            <Image src={Logo} alt="Brand logo" />
+          <a className="cursor-pointer max-w-[571px]" aria-label="Creative Newham logo">
+            <Image src={Logo} alt="Creative Newham logo" />
           </a>
         </Link>
       </div>

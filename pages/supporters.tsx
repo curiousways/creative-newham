@@ -1,13 +1,9 @@
 import type { NextPage } from "next";
-import Link from "next/link";
-import { motion } from "framer-motion";
-import { item } from "@/lib/animations";
 import Panel from "@/components/Panel";
 import { supporters } from "../data/data";
 import ImageLink from "@/components/ImageLink";
 
 const MembersSupporters: NextPage = () => {
-  let viewportConfig = { once: true };
 
   return (
     <main className="container--wide">

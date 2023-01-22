@@ -1,11 +1,8 @@
 import { useState } from 'react';
 import type { NextPage } from "next";
-import { motion } from "framer-motion";
-import { item } from "@/lib/animations";
 import Panel from "@/components/Panel";
 
 const Membership: NextPage = () => {
-  let viewportConfig = { once: true };
 
   const [inNewham, setInNewham] = useState("");
   const [mobility, setMobility] = useState("");
@@ -35,23 +32,15 @@ const Membership: NextPage = () => {
       <div className="space-y-20">
 
         <Panel title="Membership">
+          <p>
+            To become a member and receive our quarterly newsletter, we ask that you are: 
+          </p>
+          <ul>
+            <li>a creative, community, educational, social or voluntary organisation based (or working) in Newham</li>
+            <li>interested in the improvement of cultural mobility in all its forms in Newham</li>
+          </ul>
 
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={item}
-            className="cn-text"
-          >
-            <p>
-              To become a member and receive our quarterly newsletter, we ask that you are: 
-            </p>
-            <ul>
-              <li>a creative, community, educational, social or voluntary organisation based (or working) in Newham</li>
-              <li>interested in the improvement of cultural mobility in all its forms in Newham</li>
-            </ul>
-
-            <h3>Apply to join Creative Newham</h3>
-          </motion.div>
+          <h3>Apply to join Creative Newham</h3>
 
           <form className="space-y-10" onSubmit={handleSubmit}>
 
