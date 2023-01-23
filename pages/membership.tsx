@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 import type { NextPage } from "next";
 
@@ -13,6 +13,22 @@ const Membership: NextPage = () => {
   const [successMessage, setSuccessMessage] = useState(false);
 
   const formEl = useRef<HTMLFormElement>(null);
+
+  useEffect(() => {
+    validate();
+  }, [inNewham, mobility]);
+
+  useEffect(() => {
+    setShowError(false);
+  }, []);
+
+  const validate = () => {
+    if (inNewham === "yes" && mobility === "yes") {
+      setShowError(false);
+    } else {
+      setShowError(true);
+    }
+  };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.name === "inNewham") {
@@ -46,309 +62,313 @@ const Membership: NextPage = () => {
     <main className="container">
       <div className="space-y-20">
         <Panel title="Membership">
-          <p>
-            To become a member and receive our quarterly newsletter, we ask that
-            you are:
-          </p>
-          <ul>
-            <li>
-              a creative, community, educational, social or voluntary
-              organisation based (or working) in Newham
-            </li>
-            <li>
-              interested in the improvement of cultural mobility in all its
-              forms in Newham
-            </li>
-          </ul>
+          <div className="cn-text">
+            <p>
+              To become a member and receive our quarterly newsletter, we ask
+              that you are:
+            </p>
 
-          <h3>Apply to join Creative Newham</h3>
+            <ul>
+              <li>
+                a creative, community, educational, social or voluntary
+                organisation based (or working) in Newham
+              </li>
+              <li>
+                interested in the improvement of cultural mobility in all its
+                forms in Newham
+              </li>
+            </ul>
 
-          <form className="space-y-10" ref={formEl} onSubmit={handleSubmit}>
-            <div>
-              <label>Are you based in Newham?</label>
-              <fieldset className="mt-4">
-                <legend className="sr-only">Based in Newham</legend>
-                <div className="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">
-                  <div className="flex items-center">
-                    <input
-                      name="inNewham"
-                      id="inNewhamYes"
-                      type="radio"
-                      value="yes"
-                      className="h-4 w-4 border-white text-cn-orange focus:ring-cn-orange"
-                      checked={inNewham === "yes"}
-                      onChange={handleChange}
-                    />
-                    <label htmlFor="inNewhamYes" className="ml-3 block">
-                      Yes
-                    </label>
+            <h3>Apply to join Creative Newham</h3>
+
+            <form className="space-y-10" ref={formEl} onSubmit={handleSubmit}>
+              <div>
+                <label>Are you based in Newham?</label>
+                <fieldset className="mt-4">
+                  <legend className="sr-only">Based in Newham</legend>
+                  <div className="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">
+                    <div className="flex items-center">
+                      <input
+                        name="inNewham"
+                        id="inNewhamYes"
+                        type="radio"
+                        value="yes"
+                        className="h-4 w-4 border-white text-cn-orange focus:ring-cn-orange"
+                        checked={inNewham === "yes"}
+                        onChange={handleChange}
+                      />
+                      <label htmlFor="inNewhamYes" className="ml-3 block">
+                        Yes
+                      </label>
+                    </div>
+
+                    <div className="flex items-center">
+                      <input
+                        name="inNewham"
+                        id="inNewhamNo"
+                        type="radio"
+                        value="no"
+                        className="h-4 w-4 border-white text-cn-orange focus:ring-cn-orange"
+                        checked={inNewham === "no"}
+                        onChange={handleChange}
+                      />
+                      <label htmlFor="inNewhamNo" className="ml-3 block">
+                        No
+                      </label>
+                    </div>
                   </div>
-
-                  <div className="flex items-center">
-                    <input
-                      name="inNewham"
-                      id="inNewhamNo"
-                      type="radio"
-                      value="no"
-                      className="h-4 w-4 border-white text-cn-orange focus:ring-cn-orange"
-                      checked={inNewham === "no"}
-                      onChange={handleChange}
-                    />
-                    <label htmlFor="inNewhamNo" className="ml-3 block">
-                      No
-                    </label>
-                  </div>
-                </div>
-              </fieldset>
-            </div>
-
-            <div>
-              <label>
-                Are you interested in the improvement of cultural mobility in
-                Newham?
-              </label>
-              <fieldset className="mt-4">
-                <legend className="sr-only">Culural Mobility</legend>
-                <div className="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">
-                  <div className="flex items-center">
-                    <input
-                      name="mobility"
-                      id="mobilityYes"
-                      type="radio"
-                      value="yes"
-                      className="h-4 w-4 border-white text-cn-orange focus:ring-cn-orange"
-                      checked={mobility === "yes"}
-                      onChange={handleChange}
-                    />
-                    <label htmlFor="mobilityYes" className="ml-3 block">
-                      Yes
-                    </label>
-                  </div>
-
-                  <div className="flex items-center">
-                    <input
-                      name="mobility"
-                      id="mobilityNo"
-                      type="radio"
-                      value="no"
-                      className="h-4 w-4 border-white text-cn-orange focus:ring-cn-orange"
-                      checked={mobility === "no"}
-                      onChange={handleChange}
-                    />
-                    <label htmlFor="mobilityNo" className="ml-3 block">
-                      No
-                    </label>
-                  </div>
-                </div>
-              </fieldset>
-            </div>
-
-            {/* Reason For Joining */}
-            <div>
-              <label htmlFor="joiningReason" className="block mb-4">
-                What are your principal reasons for joining Creative Newham?
-              </label>
-              <div className="mt-1">
-                <textarea
-                  rows={4}
-                  name="joiningReason"
-                  id="joiningReason"
-                  className="block text-cn-blue w-full rounded-md shadow-sm border-white focus:border-cn-orange focus:ring-cn-orange"
-                  required
-                />
+                </fieldset>
               </div>
-            </div>
 
-            {/* Name */}
-            <div className="flex xl:space-x-10">
-              <div className="flex-1">
-                <label htmlFor="name" className="block mb-4">
-                  Your name
+              <div>
+                <label>
+                  Are you interested in the improvement of cultural mobility in
+                  Newham?
+                </label>
+                <fieldset className="mt-4">
+                  <legend className="sr-only">Culural Mobility</legend>
+                  <div className="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">
+                    <div className="flex items-center">
+                      <input
+                        name="mobility"
+                        id="mobilityYes"
+                        type="radio"
+                        value="yes"
+                        className="h-4 w-4 border-white text-cn-orange focus:ring-cn-orange"
+                        checked={mobility === "yes"}
+                        onChange={handleChange}
+                      />
+                      <label htmlFor="mobilityYes" className="ml-3 block">
+                        Yes
+                      </label>
+                    </div>
+
+                    <div className="flex items-center">
+                      <input
+                        name="mobility"
+                        id="mobilityNo"
+                        type="radio"
+                        value="no"
+                        className="h-4 w-4 border-white text-cn-orange focus:ring-cn-orange"
+                        checked={mobility === "no"}
+                        onChange={handleChange}
+                      />
+                      <label htmlFor="mobilityNo" className="ml-3 block">
+                        No
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+
+              {/* Reason For Joining */}
+              <div>
+                <label htmlFor="joiningReason" className="block mb-4">
+                  What are your principal reasons for joining Creative Newham?
+                </label>
+                <div className="mt-1">
+                  <textarea
+                    rows={4}
+                    name="joiningReason"
+                    id="joiningReason"
+                    className="block text-cn-blue w-full rounded-md shadow-sm border-white focus:border-cn-orange focus:ring-cn-orange"
+                    required
+                  />
+                </div>
+              </div>
+
+              {/* Name & Email */}
+              <div className="flex xl:space-x-10">
+                <div className="flex-1">
+                  <label htmlFor="name" className="block mb-4">
+                    Your name
+                  </label>
+                  <div className="mt-1">
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      className="block w-full rounded-md text-cn-blue border-white shadow-sm focus:border-cn-orange focus:ring-cn-orange"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div className="flex-1">
+                  <label htmlFor="email" className="block mb-4">
+                    Email
+                  </label>
+                  <div className="mt-1">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      className="block w-full rounded-md text-cn-blue border-white shadow-sm focus:border-cn-orange focus:ring-cn-orange"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* Organization name */}
+              <div>
+                <label htmlFor="orgName" className="block mb-4">
+                  Organisation name
                 </label>
                 <div className="mt-1">
                   <input
                     type="text"
-                    name="name"
-                    id="name"
-                    className="block w-full rounded-md border-white shadow-sm focus:border-cn-orange focus:ring-cn-orange"
+                    name="orgName"
+                    id="orgName"
+                    className="block w-full rounded-md text-cn-blue border-white shadow-sm focus:border-cn-orange focus:ring-cn-orange"
                     required
                   />
                 </div>
               </div>
 
-              <div className="flex-1">
-                <label htmlFor="email" className="block mb-4">
-                  Email
+              {/* Street Adress & City */}
+              <div className="flex xl:space-x-10">
+                <div className="flex-1">
+                  <label htmlFor="street" className="block mb-4">
+                    Street address
+                  </label>
+                  <div className="mt-1">
+                    <input
+                      type="text"
+                      name="street"
+                      id="street"
+                      className="block w-full rounded-md text-cn-blue border-white shadow-sm focus:border-cn-orange focus:ring-cn-orange"
+                      required
+                    />
+                  </div>
+                </div>
+
+                {/* City */}
+                <div className="flex-1">
+                  <label htmlFor="city" className="block mb-4">
+                    City
+                  </label>
+                  <div className="mt-1">
+                    <input
+                      type="text"
+                      name="city"
+                      id="city"
+                      className="block w-full rounded-md text-cn-blue border-white shadow-sm focus:border-cn-orange focus:ring-cn-orange"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* County & Postcode */}
+              <div className="flex xl:space-x-10">
+                <div className="flex-1">
+                  <label htmlFor="county" className="block mb-4">
+                    County
+                  </label>
+                  <div className="mt-1">
+                    <input
+                      type="text"
+                      name="county"
+                      id="county"
+                      className="block w-full rounded-md text-cn-blue border-white shadow-sm focus:border-cn-orange focus:ring-cn-orange"
+                      required
+                    />
+                  </div>
+                </div>
+
+                {/* Postcode */}
+                <div className="flex-1">
+                  <label htmlFor="postcode" className="block mb-4">
+                    Postcode
+                  </label>
+                  <div className="mt-1">
+                    <input
+                      type="text"
+                      name="postcode"
+                      id="postcode"
+                      className="block w-full rounded-md text-cn-blue border-white shadow-sm focus:border-cn-orange focus:ring-cn-orange"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* Organisation’s mission ? */}
+              <div>
+                <label htmlFor="orgMission" className="block mb-4">
+                  What is your organisation’s mission?
                 </label>
                 <div className="mt-1">
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    className="block w-full rounded-md border-white shadow-sm focus:border-cn-orange focus:ring-cn-orange"
+                  <textarea
+                    rows={4}
+                    name="orgMission"
+                    id="orgMission"
+                    className="block text-cn-blue w-full rounded-md shadow-sm border-white focus:border-cn-orange focus:ring-cn-orange"
                     required
                   />
                 </div>
               </div>
-            </div>
 
-            {/* Organization name */}
-            <div>
-              <label htmlFor="orgName" className="block mb-4">
-                Organisation name
-              </label>
-              <div className="mt-1">
+              {/* Community focus? */}
+              <div>
+                <label htmlFor="community" className="block mb-4">
+                  Does your organisation have a community focus? If so, please
+                  outline.
+                </label>
+                <div className="mt-1">
+                  <textarea
+                    rows={4}
+                    name="community"
+                    id="community"
+                    className="block text-cn-blue w-full rounded-md shadow-sm border-white focus:border-cn-orange focus:ring-cn-orange"
+                    required
+                  />
+                </div>
+              </div>
+
+              {/* Newsletter */}
+              <div className="relative flex items-start mt-5">
+                <div className="flex h-5 items-center">
+                  <input
+                    id="newsletter"
+                    name="newsletter"
+                    type="checkbox"
+                    className="h-4 w-4 rounded border-gray-300 text-cn-orange focus:ring-cn-orange"
+                  />
+                </div>
+                <div className="ml-3 text-sm">
+                  <label htmlFor="newsletter">
+                    Tick the box to receive the Creative Newham newsletter
+                  </label>
+                </div>
+              </div>
+
+              {/* Submit Button */}
+              <div className="mt-5 inline-flex">
                 <input
-                  type="text"
-                  name="orgName"
-                  id="orgName"
-                  className="block w-full rounded-md border-white shadow-sm focus:border-cn-orange focus:ring-cn-orange"
-                  required
+                  className="cn-btn"
+                  type="submit"
+                  value="Submit"
+                  disabled={inNewham !== "yes" || mobility !== "yes"}
                 />
               </div>
-            </div>
 
-            {/* Street Adress */}
-            <div className="flex xl:space-x-10">
-              <div className="flex-1">
-                <label htmlFor="street" className="block mb-4">
-                  Street address
-                </label>
-                <div className="mt-1">
-                  <input
-                    type="text"
-                    name="street"
-                    id="street"
-                    className="block w-full rounded-md border-white shadow-sm focus:border-cn-orange focus:ring-cn-orange"
-                    required
-                  />
-                </div>
-              </div>
+              {/* Error Message */}
+              {showError && (
+                <p className="cn-message bg-red-500">
+                  You need to answer yes to questions 1 & 2 to proceed
+                </p>
+              )}
 
-              {/* City */}
-              <div className="flex-1">
-                <label htmlFor="city" className="block mb-4">
-                  City
-                </label>
-                <div className="mt-1">
-                  <input
-                    type="text"
-                    name="city"
-                    id="city"
-                    className="block w-full rounded-md border-white shadow-sm focus:border-cn-orange focus:ring-cn-orange"
-                    required
-                  />
-                </div>
-              </div>
-            </div>
-
-            {/* County */}
-            <div className="flex xl:space-x-10">
-              <div className="flex-1">
-                <label htmlFor="county" className="block mb-4">
-                  County
-                </label>
-                <div className="mt-1">
-                  <input
-                    type="text"
-                    name="county"
-                    id="county"
-                    className="block w-full rounded-md border-white shadow-sm focus:border-cn-orange focus:ring-cn-orange"
-                    required
-                  />
-                </div>
-              </div>
-
-              {/* Postcode */}
-              <div className="flex-1">
-                <label htmlFor="postcode" className="block mb-4">
-                  Postcode
-                </label>
-                <div className="mt-1">
-                  <input
-                    type="text"
-                    name="postcode"
-                    id="postcode"
-                    className="block w-full rounded-md border-white shadow-sm focus:border-cn-orange focus:ring-cn-orange"
-                    required
-                  />
-                </div>
-              </div>
-            </div>
-
-            {/* Organisation’s mission ? */}
-            <div>
-              <label htmlFor="orgMission" className="block mb-4">
-                What is your organisation’s mission?
-              </label>
-              <div className="mt-1">
-                <textarea
-                  rows={4}
-                  name="orgMission"
-                  id="orgMission"
-                  className="block text-cn-blue w-full rounded-md shadow-sm border-white focus:border-cn-orange focus:ring-cn-orange"
-                  required
-                />
-              </div>
-            </div>
-
-            {/* Community focus? */}
-            <div>
-              <label htmlFor="community" className="block mb-4">
-                Does your organisation have a community focus? If so, please
-                outline.
-              </label>
-              <div className="mt-1">
-                <textarea
-                  rows={4}
-                  name="community"
-                  id="community"
-                  className="block text-cn-blue w-full rounded-md shadow-sm border-white focus:border-cn-orange focus:ring-cn-orange"
-                  required
-                />
-              </div>
-            </div>
-
-            {/* Newsletter */}
-            <div className="relative flex items-start mt-5">
-              <div className="flex h-5 items-center">
-                <input
-                  id="newsletter"
-                  name="newsletter"
-                  type="checkbox"
-                  className="h-4 w-4 rounded border-gray-300 text-cn-orange focus:ring-cn-orange"
-                  required
-                />
-              </div>
-              <div className="ml-3 text-sm">
-                <label htmlFor="newsletter">
-                  Tick the box to receive the Creative Newham newsletter
-                </label>
-              </div>
-            </div>
-
-            {/* Submit Button */}
-            <div className="mt-5 inline-flex">
-              <input
-                className="cn-btn"
-                type="submit"
-                value="Submit"
-                disabled={inNewham !== "yes" || mobility !== "yes"}
-              />
-            </div>
-
-            {/* Error Message */}
-            {showError && (
-              <p className="text-red-500">
-                You need to answer yes to questions 1 & 2 to proceed
-              </p>
-            )}
-
-            {/* Success Message */}
-            {successMessage && (
-              <p>Request Submitted. We will get back to you shortly.</p>
-            )}
-          </form>
+              {/* Success Message */}
+              {successMessage && (
+                <p className="cn-message bg-green-500">
+                  Request Submitted. We will get back to you shortly.
+                </p>
+              )}
+            </form>
+          </div>
         </Panel>
       </div>
     </main>
