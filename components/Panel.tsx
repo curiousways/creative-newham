@@ -7,9 +7,10 @@ import { container, item } from "@/lib/animations";
 type PanelProps = {
   title: string;
   children: React.ReactNode;
+  location?: "heading" | "body";
 };
 
-const Panel = ({ title, children }: PanelProps) => {
+const Panel = ({ title, children, location = "heading" }: PanelProps) => {
   let viewportConfig = { once: true };
 
   return (
@@ -20,9 +21,16 @@ const Panel = ({ title, children }: PanelProps) => {
       viewport={viewportConfig}
       className="space-y-6 md:space-y-[83px]"
     >
-      <motion.h2 variants={item} viewport={viewportConfig}>
-        {title}
-      </motion.h2>
+      {location === "heading" && (
+        <motion.h1 variants={item} viewport={viewportConfig}>
+          {title}
+        </motion.h1>
+      )}
+      {location === "body" && (
+        <motion.h2 variants={item} viewport={viewportConfig}>
+          {title}
+        </motion.h2>
+      )}
       <motion.div
         variants={item}
         viewport={viewportConfig}
