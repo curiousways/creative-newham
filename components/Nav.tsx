@@ -3,26 +3,28 @@ import Image from "next/image";
 
 import { motion } from "framer-motion";
 
+import NavLink from "./NavLink";
+
 import Logo from "../public/assets/images/logo.svg";
 
 const navItems = [
   {
-    name: 'About',
-    href: '/about/',
+    name: "About",
+    href: "/about/",
   },
   {
-    name: 'Supporters',
-    href: '/supporters/',
-  },  
+    name: "Supporters",
+    href: "/supporters/",
+  },
   {
-    name: 'News',
-    href: '/news/',
-  },  
+    name: "News",
+    href: "/news/",
+  },
   {
-    name: 'Contact',
-    href: '/contact/',
-  },    
-]
+    name: "Contact",
+    href: "/contact/",
+  },
+];
 
 const Nav = () => {
   return (
@@ -34,7 +36,10 @@ const Nav = () => {
     >
       <div>
         <Link href="/" passHref>
-          <a className="cursor-pointer max-w-[571px]" aria-label="Creative Newham logo">
+          <a
+            className="cursor-pointer max-w-[571px]"
+            aria-label="Creative Newham logo"
+          >
             <Image src={Logo} alt="Creative Newham logo" />
           </a>
         </Link>
@@ -44,15 +49,11 @@ const Nav = () => {
         <ul className="flex space-x-5 mt-2 sm:mt-5 xl:mt-0">
           {navItems.map((item) => (
             <li key={item.name}>
-              <a href={item.href} className="text-white text-sm sm:text-lg hover:text-cn-orange">
-                {item.name}
-              </a>
+              <NavLink href={item.href}>{item.name}</NavLink>
             </li>
           ))}
         </ul>
       </div>
-
-
     </motion.div>
   );
 };
