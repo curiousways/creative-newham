@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     return () => {
       router.events.off("routeChangeComplete", handleRouteChange);
     };
-  }, [router.events]);
+  }, [router.events, fathom, siteUrlhttpsStripped]);
 
   return (
     <>
@@ -67,7 +67,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Nav />
         <Component {...pageProps} />
         <Footer />
-      </div>        
+      </div>
     </>
   );
 }
