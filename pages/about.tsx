@@ -1,37 +1,80 @@
 import type { NextPage } from "next";
 import Link from "next/link";
-import Panel from "@/components/Panel";
+import Panel from "@/components/panel/Panel";
 
 const About: NextPage = () => {
-
   return (
     <main className="container">
-
       <Panel title="Our story">
         <div className="cn-text">
           <p>
-            Creative Newham came into being in 2018, as a result of Arts Council England’s Creative People & Places opportunity, which Newham partners seized with enthusiasm across the borough. Through the process of developing this bid, lead organisation Rosetta Arts (who has a 29-year history of delivering community arts in Newham) brought together over 80 individuals representing over 60 organisations, all sharing a commitment to empowering borough residents to realise their full cultural and creative potential. In September 2019, Creative Newham was formalised and since then, the alliance has continued to grow.
+            Creative Newham came into being in 2018, as a result of Arts Council
+            England’s Creative People & Places opportunity, which Newham
+            partners seized with enthusiasm across the borough. Through the
+            process of developing this bid, lead organisation Rosetta Arts (who
+            has a 29-year history of delivering community arts in Newham)
+            brought together over 80 individuals representing over 60
+            organisations, all sharing a commitment to empowering borough
+            residents to realise their full cultural and creative potential. In
+            September 2019, Creative Newham was formalised and since then, the
+            alliance has continued to grow.
           </p>
           <h3>Why Creative Newham?</h3>
           <p>
-            Despite a dramatic and positive growth in prosperity as Newham moved from the <Link href="http://newhamdata.wpengine.com/wp-content/uploads/2017/06/Demography-Bulletin-October-2015-IMD.pdf" passHref><a target="_blank" rel="noreferrer">2nd to the 25th most deprived borough in Britain between 2010 and 2015</a></Link>, Newham residents are still amongst some of the most disadvantaged in the UK.
+            Despite a dramatic and positive growth in prosperity as Newham moved
+            from the{" "}
+            <Link
+              href="http://newhamdata.wpengine.com/wp-content/uploads/2017/06/Demography-Bulletin-October-2015-IMD.pdf"
+              passHref
+            >
+              <a target="_blank" rel="noreferrer">
+                2nd to the 25th most deprived borough in Britain between 2010
+                and 2015
+              </a>
+            </Link>
+            , Newham residents are still amongst some of the most disadvantaged
+            in the UK.
           </p>
           <p>
-            Cultural investment in the borough is amongst the lowest in London and as a consequence Newham has the second lowest level of cultural engagement of all the London boroughs at 36.6% (the lowest, Barking & Dagenham, is already an established Creative People & Places place).
-          </p>  
-          <p>
-            There is, however:
-          </p>            
+            Cultural investment in the borough is amongst the lowest in London
+            and as a consequence Newham has the second lowest level of cultural
+            engagement of all the London boroughs at 36.6% (the lowest, Barking
+            & Dagenham, is already an established Creative People & Places
+            place).
+          </p>
+          <p>There is, however:</p>
           <ul>
-            <li>a rich and diverse network of ‘under the radar’ cultural activity organised by artist groups, faith-based organisations and community groups</li>
-            <li>a successful history of small-scale entrepreneurship with a large number of independent shops and services catering for the local community</li>
-            <li>a positive view of the borough’s ethnic and cultural diversity amongst residents; 9 in 10 agree that ‘people from different backgrounds get on well in my local area’ and the proportion of residents with friends entirely from their own ethnic background is just 9% (Understanding Newham 2019)</li>
+            <li>
+              a rich and diverse network of ‘under the radar’ cultural activity
+              organised by artist groups, faith-based organisations and
+              community groups
+            </li>
+            <li>
+              a successful history of small-scale entrepreneurship with a large
+              number of independent shops and services catering for the local
+              community
+            </li>
+            <li>
+              a positive view of the borough’s ethnic and cultural diversity
+              amongst residents; 9 in 10 agree that ‘people from different
+              backgrounds get on well in my local area’ and the proportion of
+              residents with friends entirely from their own ethnic background
+              is just 9% (Understanding Newham 2019)
+            </li>
           </ul>
           <p>
-            Our vision for Creative Newham is a borough where everyone can benefit from creative opportunities – as makers, producers, leaders, audiences and participants – whatever their background or circumstances.              
+            Our vision for Creative Newham is a borough where everyone can
+            benefit from creative opportunities – as makers, producers, leaders,
+            audiences and participants – whatever their background or
+            circumstances.
           </p>
           <p>
-            Over the next 10 years we hope to contribute to  a Newham where homegrown creative talent is recognised and rewarded both within and beyond the borough; where residents respect and value different cultures and are proud of their neighbourhood; and where people have the confidence and the opportunity to lead and enjoy a wide range of creative activities.              
+            Over the next 10 years we hope to contribute to a Newham where
+            homegrown creative talent is recognised and rewarded both within and
+            beyond the borough; where residents respect and value different
+            cultures and are proud of their neighbourhood; and where people have
+            the confidence and the opportunity to lead and enjoy a wide range of
+            creative activities.
           </p>
           {/* <h3>Make-up of Creative Newham</h3>
           <p>
@@ -110,7 +153,6 @@ const About: NextPage = () => {
 
         </div>
       </Panel>    */}
-        
     </main>
   );
 };

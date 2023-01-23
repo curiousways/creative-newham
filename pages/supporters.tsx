@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 
-import Panel from "@/components/Panel";
+import Panel from "@/components/panel/Panel";
 import ImageLink from "@/components/ImageLink";
 
 import { supporters } from "../data/data";
