@@ -235,7 +235,7 @@ const Membership: NextPage = () => {
                   <div className="mt-1">
                     <input
                       type="text"
-                      name="street"
+                      name="address"
                       id="street"
                       className="block w-full rounded-md text-cn-blue border-white shadow-sm focus:border-cn-orange focus:ring-cn-orange"
                       required
@@ -332,7 +332,7 @@ const Membership: NextPage = () => {
                 <div className="flex h-5 items-center">
                   <input
                     id="newsletter"
-                    name="newsletter"
+                    name="_optin"
                     type="checkbox"
                     className="h-4 w-4 rounded border-gray-300 text-cn-orange focus:ring-cn-orange"
                   />
