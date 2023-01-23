@@ -28,10 +28,6 @@
     @apply min-h-screen bg-cn-blue text-white md:text-xl;
   }
 
-  h2 {
-    @apply text-cn-orange text-4xl md:text-5xl;
-  }
-
   a {
     @apply text-white underline underline-offset-4 hover:text-cn-orange duration-300;
   }
@@ -52,5 +48,9 @@
 
   .cn-btn {
     @apply disabled:bg-gray-300 disabled:text-gray-400 text-cn-blue--contrast text-base bg-cn-orange rounded-full py-4 px-8 flex justify-center hover:bg-white hover:text-cn-blue transition-colors duration-500 no-underline hover:cursor-pointer;
+  }
+
+  .cn-message {
+    @apply text-white pt-1 pb-2 px-3 inline-block rounded;
   }
 }

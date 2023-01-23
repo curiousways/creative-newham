@@ -22,12 +22,20 @@ const Panel = ({ title, children, location = "heading" }: PanelProps) => {
       className="space-y-6 md:space-y-[83px]"
     >
       {location === "heading" && (
-        <motion.h1 variants={item} viewport={viewportConfig}>
+        <motion.h1
+          className="text-cn-orange text-4xl md:text-5xl"
+          variants={item}
+          viewport={viewportConfig}
+        >
           {title}
         </motion.h1>
       )}
       {location === "body" && (
-        <motion.h2 variants={item} viewport={viewportConfig}>
+        <motion.h2
+          className="text-cn-orange text-3xl md:text-4xl"
+          variants={item}
+          viewport={viewportConfig}
+        >
           {title}
         </motion.h2>
       )}
