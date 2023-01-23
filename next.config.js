@@ -5,7 +5,7 @@ const nextConfig = {
   env: {
     SITE_URL: "https://www.creativenewham.com",
     SITE_TITLE: "Creative Newham",
-    FATHOM_ANALYTICS_ID: "TPQFBBUO",
+    GOOGLE_ANALYTICS_ID: "G-JQL4063Y0E",
   },
   images: {
     deviceSizes: [400, 640, 750, 828, 1080, 1200, 1920, 2048, 3840],
