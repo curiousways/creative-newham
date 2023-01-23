@@ -1,15 +1,18 @@
 import type { NextPage } from "next";
+
 import Panel from "@/components/Panel";
-import { supporters } from "../data/data";
 import ImageLink from "@/components/ImageLink";
 
-const MembersSupporters: NextPage = () => {
+import { supporters } from "../data/data";
 
+import WestFieldEastBank from "../public/assets/images/westfield_east_bank_creative_futures_fund.png";
+import WestfieldCityStratford from "../public/assets/images/westfield_city_stratford.jpg";
+import FoundationForLondon from "../public/assets/images/foundation-for-future-london.png";
+
+const MembersSupporters: NextPage = () => {
   return (
     <main className="container--wide">
-
       <Panel title="Supporters">
-
         {/* Supporters */}
         <div className="cn-text">
           <h3>Creative Newham supporters</h3>
@@ -19,15 +22,15 @@ const MembersSupporters: NextPage = () => {
           {/* Full */}
           <ImageLink
             link="https://future.london/programme/westfield-east-bank-creative-futures-fund/"
-            image="/assets/images/westfield_east_bank_creative_futures_fund.png"
+            image={WestFieldEastBank}
             alt="Westfield East Bank Creative Futures Fund"
             wrapperClassName="sm:col-span-6"
           />
-          
-          {/* Half */}          
+
+          {/* Half */}
           <ImageLink
             link="https://uk.westfield.com/stratfordcity/homepage"
-            image="/assets/images/westfield_city_stratford.jpg"
+            image={WestfieldCityStratford}
             alt="Westfield City Stratford"
             imgClassName="h-28 w-full"
             wrapperClassName="sm:col-span-3"
@@ -36,11 +39,11 @@ const MembersSupporters: NextPage = () => {
           {/* Half */}
           <ImageLink
             link="https://future.london/"
-            image="/assets/images/foundation-for-future-london.png"
+            image={FoundationForLondon}
             alt="Westfield City Stratford"
             wrapperClassName="sm:col-span-3"
-          />              
-          
+          />
+
           {/* Thirds */}
           {supporters.map((logo) => (
             <ImageLink
@@ -50,11 +53,9 @@ const MembersSupporters: NextPage = () => {
               key={logo.title}
               wrapperClassName="sm:col-span-2"
             />
-          ))}                             
-        </div> 
-
+          ))}
+        </div>
       </Panel>
-
     </main>
   );
 };
