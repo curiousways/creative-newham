@@ -21,8 +21,8 @@ const navItems = [
     href: "/news/",
   },
   {
-    name: "Contact",
-    href: "/contact/",
+    name: "Membership",
+    href: "/membership/",
   },
 ];
 
