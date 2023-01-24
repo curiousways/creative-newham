@@ -88,10 +88,28 @@ const Home: NextPage = () => {
               Creative Newham is supported by a steering group which meets
               quarterly and is co-ordinated by Rosetta Arts. Chaired by Sanaz
               Amidi, Chief Executive of Rosetta Arts, the steering group
-              consists of representatives from eight local organisations:
-              Certain Blacks, Caramel Rock, Newham New Deal Partnership, Rosetta
-              Arts, University College London, London Borough of Newham, Royal
-              Docks Team and Foundation for Future London.
+              consists of representatives from eight local organisations:{" "}
+              <Link href="https://certainblacks.com/">Certain Blacks</Link>,{" "}
+              <Link href="https://caramelrock.com/">Caramel Rock</Link>,{" "}
+              <Link href="https://www.newham.gov.uk/">Newham</Link>,{" "}
+              <Link href="https://newhamndp.org.uk/">New Deal Partnership</Link>
+              , <Link href="https://rosettaarts.org/">Rosetta Arts</Link>,{" "}
+              <Link href="https://www.ucl.ac.uk/">
+                University College London
+              </Link>
+              ,{" "}
+              <Link href="https://www.newham.gov.uk/">
+                London Borough of Newham
+              </Link>
+              ,{" "}
+              <Link href="https://www.royaldocks.london/">
+                Royal Docks Team
+              </Link>{" "}
+              and{" "}
+              <Link href="https://future.london/">
+                Foundation for Future London
+              </Link>{" "}
+              .
             </p>
           </div>
 
