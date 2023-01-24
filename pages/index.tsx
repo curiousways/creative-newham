@@ -83,19 +83,6 @@ const Home: NextPage = () => {
               </Link>
             </p>
 
-            <h3>Make-up of Creative Newham</h3>
-            <p>
-              Creative Newham’s steering group is Chaired by Sanaz Amidi, Chief
-              Executive of Rosetta Arts, which meets quarterly and consists of
-              representative from nine local community and creative
-              organisations: Certain Blacks, Caramel Rock, Newham New Deal
-              Partnership, Rosetta Arts, University College London, London
-              Borough of Newham, the Royal Docks and Foundation for Future
-              London. Its wider alliance is a more informal network of 80+
-              organisations that are interested in or share the Creative Newham
-              vision.
-            </p>
-
             <h3>Steering Group</h3>
             <p>
               Creative Newham is supported by a steering group which meets
@@ -112,30 +99,6 @@ const Home: NextPage = () => {
             <Button text="Become a member" link="/membership/" />
           </div>
         </Panel>
-
-        {/* <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={item}
-          className="sm:flex flex-col xl:flex-row xl:space-x-5"
-        >
-          <div className="sm:flex sm:space-x-5 mb-5 xl:mb-0">
-            <div className="flex-1 xl:flex-none mb-5 sm:mb-0">
-              <Button text="What we do" link="/about/" />
-            </div>
-            <div className="flex-1 xl:flex-none">
-              <Button text="Supporters" link="/supporters/" />
-            </div>
-          </div>
-          <div className="sm:flex sm:space-x-5">
-            <div className="flex-1 xl:flex-none mb-5 sm:mb-0">
-              <Button text="Become a member" link="/membership/" />
-            </div>
-            <div className="flex-1 xl:flex-none">
-              <Button text="News" link="/news/" />
-            </div>
-          </div>
-        </motion.div> */}
       </div>
     </main>
   );
