@@ -327,23 +327,6 @@ const Membership: NextPage = () => {
                 </div>
               </div>
 
-              {/* Newsletter */}
-              <div className="relative flex items-start mt-5">
-                <div className="flex h-5 items-center">
-                  <input
-                    id="newsletter"
-                    name="_optin"
-                    type="checkbox"
-                    className="h-4 w-4 rounded border-gray-300 text-cn-orange focus:ring-cn-orange"
-                  />
-                </div>
-                <div className="ml-3 text-sm">
-                  <label htmlFor="newsletter">
-                    Tick the box to receive the Creative Newham newsletter
-                  </label>
-                </div>
-              </div>
-
               {/* Submit Button */}
               <div className="mt-5 inline-flex">
                 <input
