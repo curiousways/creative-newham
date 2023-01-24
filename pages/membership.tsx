@@ -82,6 +82,7 @@ const Membership: NextPage = () => {
             <h3>Apply to join Creative Newham</h3>
 
             <form className="space-y-10" ref={formEl} onSubmit={handleSubmit}>
+              {/* Question 1 */}
               <div>
                 <label>Are you based in Newham?</label>
                 <fieldset className="mt-4">
@@ -120,6 +121,7 @@ const Membership: NextPage = () => {
                 </fieldset>
               </div>
 
+              {/* Question 2 */}
               <div>
                 <label>
                   Are you interested in the improvement of cultural mobility in
@@ -178,7 +180,8 @@ const Membership: NextPage = () => {
               </div>
 
               {/* Name & Email */}
-              <div className="flex xl:space-x-10">
+              <div className="flex flex-col gap-y-5 md:flex-row md:gap-x-4 xl:gap-x-8">
+                {/* Name */}
                 <div className="flex-1">
                   <label htmlFor="name" className="block mb-4">
                     Your name
@@ -194,6 +197,7 @@ const Membership: NextPage = () => {
                   </div>
                 </div>
 
+                {/* Email */}
                 <div className="flex-1">
                   <label htmlFor="email" className="block mb-4">
                     Email
@@ -227,7 +231,8 @@ const Membership: NextPage = () => {
               </div>
 
               {/* Street Adress & City */}
-              <div className="flex xl:space-x-10">
+              <div className="flex flex-col gap-y-5 md:flex-row md:gap-x-4 xl:gap-x-8">
+                {/* Street */}
                 <div className="flex-1">
                   <label htmlFor="street" className="block mb-4">
                     Street address
@@ -261,7 +266,8 @@ const Membership: NextPage = () => {
               </div>
 
               {/* County & Postcode */}
-              <div className="flex xl:space-x-10">
+              <div className="flex flex-col gap-y-5 md:flex-row md:gap-x-4 xl:gap-x-8">
+                {/* County */}
                 <div className="flex-1">
                   <label htmlFor="county" className="block mb-4">
                     County
