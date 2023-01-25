@@ -18,7 +18,7 @@ const navItems = [
   },
   {
     name: "Join Us",
-    href: "/membership/",
+    href: "/join-us/",
   },
   {
     name: "Contact",
