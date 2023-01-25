@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import { container, item } from "../../lib/animations";
+import { classNames } from "@/utils/index";
 
 type PanelProps = {
   title: string;
@@ -19,7 +20,10 @@ const Panel = ({ title, children, location = "heading" }: PanelProps) => {
       initial="hidden"
       whileInView="visible"
       viewport={viewportConfig}
-      className="space-y-6 md:space-y-[83px]"
+      className={classNames(
+        "space-y-6 md:space-y-[83px]",
+        location === "body" ? "mt-20" : ""
+      )}
     >
       {location === "heading" && (
         <motion.h1
@@ -32,7 +36,7 @@ const Panel = ({ title, children, location = "heading" }: PanelProps) => {
       )}
       {location === "body" && (
         <motion.h2
-          className="text-cn-orange text-3xl md:text-4xl"
+          className="text-cn-orange text-4xl md:text-5xl"
           variants={item}
           viewport={viewportConfig}
         >

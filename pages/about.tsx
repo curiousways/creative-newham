@@ -151,20 +151,11 @@ const About: NextPage = () => {
             </Link>{" "}
             .
           </p>
-
-          {/* <h3>Make-up of Creative Newham</h3>
-          <p>
-            Creative Newham’s steering group is Chaired by Sanaz Amidi, Chief Executive of Rosetta Arts, which meets quarterly and consists of representative from nine local community and creative organisations: Certain Blacks, Caramel Rock, Newham New Deal Partnership, Rosetta Arts, University College London, London Borough of Newham, the Royal Docks and Foundation for Future London. Its wider alliance is a more informal network of 80+ organisations that are interested in or share the Creative Newham vision.              
-          </p> */}
         </div>
       </Panel>
 
+      {/* Supporters */}
       <Panel title="Our Supporters" location="body">
-        {/* Supporters */}
-        <div className="cn-text">
-          <h3>Creative Newham supporters</h3>
-        </div>
-
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-6">
           {/* Full */}
           <ImageLink
