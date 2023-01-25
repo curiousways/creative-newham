@@ -85,6 +85,45 @@ const About: NextPage = () => {
             creative activities.
           </p>
 
+          <h3>Our current programmes</h3>
+          <p>
+            The pilot 
+            <Link href="https://rosettaarts.org/projects/creative-newham-cultural-producers-programme-2022-2023/">
+              Creative Newham Cultural Producers programme
+            </Link>
+             provides a comprehensive training programme to local emerging
+            producers under the age of 30. It includes a 45-day placement in a
+            local cultural organisation, classroom-based theory, 1-1 mentoring
+            and regular supervision, with trainees receiving a training bursary
+            (London Living Wage). Participating hosts for this cohort are:{" "}
+            <Link href="https://www.royaldocks.london/">Royal Docks Team</Link>,{" "}
+            <Link href="https://socialconvention.org/">Social Convention</Link>,{" "}
+            <Link href="https://bowarts.org/">Bow Arts</Link>,{" "}
+            <Link href="https://www.sustainable-fashion.com/">
+              LCF Centre for Sustainable Fashion
+            </Link>
+            ,{" "}
+            <Link href="https://www.stratfordeast.com/">
+              Theatre Royal Stratford East
+            </Link>
+            , <Link href="https://codydock.org.uk/">Cody Dock</Link>,{" "}
+            <Link href="https://rosettaarts.org/">Rosetta Arts</Link>.
+          </p>
+          <p>
+            The{" "}
+            <Link href="https://rosettaarts.org/call-out-join-our-young-creative-newham-board-and-get-your-voice-heard/">
+              Creative Newham Youth Board
+            </Link>
+              have been meeting regularly to have their say in local cultural
+            issues and events. Youth Board members aged 13-18 are paid for their
+            time and in return gain confidence, new skills, new friends and
+            experience in the field. Joining details are{" "}
+            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdL3kVCQUKqVY5JRucSBrHJHVbg25Sl5mSXu77A2RvMoIulQw/viewform">
+              here
+            </Link>
+             .
+          </p>
+
           <h3>Steering Group</h3>
           <p>
             Creative Newham is supported by a steering group which meets
