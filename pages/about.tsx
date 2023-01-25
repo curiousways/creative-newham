@@ -1,6 +1,14 @@
 import type { NextPage } from "next";
 import Link from "next/link";
+
+import ImageLink from "@/components/ImageLink";
 import Panel from "@/components/panel/Panel";
+
+import { supporters } from "../data/data";
+
+import WestFieldEastBank from "../public/assets/images/westfield_east_bank_creative_futures_fund.png";
+import WestfieldCityStratford from "../public/assets/images/westfield_city_stratford.jpg";
+import FoundationForLondon from "../public/assets/images/foundation-for-future-london.png";
 
 const About: NextPage = () => {
   return (
@@ -112,76 +120,50 @@ const About: NextPage = () => {
         </div>
       </Panel>
 
-      {/* <Panel title="What we do">
+      <Panel title="Our Supporters" location="body">
+        {/* Supporters */}
         <div className="cn-text">
-          <p>
-            We work to make Newham's creative vision real for everyone in the
-            borough. We’ll make sure that cultural activities involve us all and
-            will help secure continuing support for Newham’s creative future.
-          </p>
-
-          <h3>Advocacy & lobbying</h3>
-          <p>
-            We come together to respond strategically to issues and policies
-            which affect our work, informing and influencing policy-making.
-          </p>
-
-
-          <h3>Connection</h3>
-          <p>
-            We enable partners and agencies looking to work in Newham to
-            engage with our extensive pan-borough creative network quickly to
-            identify opportunities and work together.
-          </p>
-  
-          <h3>Collaboration & co-creation</h3>
-          <p>
-            We collaborate on projects we can’t do alone or those that would
-            be better served with a more joined-up approach.
-          </p>
-
-          <h3>Networking</h3>
-          <p>
-            We meet annually at the Creative Newham Social event and at
-            smaller project-based events.
-          </p>
-
-          <h3>Fundraising</h3>
-          <p>
-            We identify funding opportunities and participate in joint funding
-            bids to attract funding and strategic interest or investment in
-            Newham. For example, Creative Newham assembled support for
-            Creative People and Places, securing significant funds for three
-            years.
-          </p>
-
-          <h3>Skills & employment</h3>
-          <p>
-            We identify training and employment opportunities for young people
-            and adults, running programmes such as the Creative Newham{" "}
-            <Link
-              href="https://rosettaarts.org/projects/creative-newham-cultural-producers-programme-2022-2023/ "
-              passHref
-            >
-              <a target="_blank" rel="noreferrer">
-                Cultural Producers programme.
-              </a>
-            </Link>
-          </p>
-
-          <h3>Steering Group</h3>
-          <p>
-            Creative Newham is supported by a steering group which meets
-            quarterly and is co-ordinated by Rosetta Arts. Chaired by Sanaz
-            Amidi, Chief Executive of Rosetta Arts, the steering group
-            consists of representatives from eight local organisations:
-            Certain Blacks, Caramel Rock, Newham New Deal Partnership, Rosetta
-            Arts, University College London, London Borough of Newham, Royal
-            Docks Team and Foundation for Future London.
-          </p>
-
+          <h3>Creative Newham supporters</h3>
         </div>
-      </Panel>    */}
+
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-6">
+          {/* Full */}
+          <ImageLink
+            link="https://future.london/programme/westfield-east-bank-creative-futures-fund/"
+            image={WestFieldEastBank}
+            alt="Westfield East Bank Creative Futures Fund"
+            wrapperClassName="sm:col-span-6"
+          />
+
+          {/* Half */}
+          <ImageLink
+            link="https://uk.westfield.com/stratfordcity/homepage"
+            image={WestfieldCityStratford}
+            alt="Westfield City Stratford"
+            imgClassName="h-28 w-full"
+            wrapperClassName="sm:col-span-3"
+          />
+
+          {/* Half */}
+          <ImageLink
+            link="https://future.london/"
+            image={FoundationForLondon}
+            alt="Westfield City Stratford"
+            wrapperClassName="sm:col-span-3"
+          />
+
+          {/* Thirds */}
+          {supporters.map((logo) => (
+            <ImageLink
+              link={logo.href}
+              image={logo.imageUrl}
+              alt={logo.title}
+              key={logo.title}
+              wrapperClassName="sm:col-span-2"
+            />
+          ))}
+        </div>
+      </Panel>
     </main>
   );
 };
