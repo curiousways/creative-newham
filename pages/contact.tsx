@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Twitter from "@/components/Twitter";
-import Instagram from "@/components/Linkedin";
+import Linkedin from "@/components/Linkedin";
 import Email from "@/components/Email";
 import Panel from "@/components/panel/Panel";
 import SocialLink from "@/components/SocialLink";
@@ -17,11 +17,11 @@ const Contact: NextPage = () => {
           Email
         </SocialLink>
         <SocialLink
-          icon={Instagram}
-          handle="@creativenewham"
-          url="https://www.instagram.com/creativenewham/"
+          icon={Linkedin}
+          handle="Creative Newham"
+          url="https://linkedin.com/"
         >
-          Instagram
+          Linkedin
         </SocialLink>
         <SocialLink
           icon={Twitter}
