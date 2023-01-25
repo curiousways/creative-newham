@@ -104,7 +104,7 @@ const Home: NextPage = () => {
           </div>
 
           <div className="inline-flex">
-            <Button text="Join Us" link="/membership/" />
+            <Button text="Join Us" link="/join-us/" />
           </div>
         </Panel>
       </div>
