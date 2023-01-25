@@ -76,6 +76,35 @@ const About: NextPage = () => {
             the confidence and the opportunity to lead and enjoy a wide range of
             creative activities.
           </p>
+
+          <h3>Steering Group</h3>
+          <p>
+            Creative Newham is supported by a steering group which meets
+            quarterly and is co-ordinated by Rosetta Arts. Chaired by Sanaz
+            Amidi, Chief Executive of Rosetta Arts, the steering group consists
+            of representatives from nine local organisations:{" "}
+            <Link href="https://certainblacks.com/">Certain Blacks</Link>,{" "}
+            <Link href="https://caramelrock.com/">Caramel Rock</Link>,{" "}
+            <Link href="https://www.uel.ac.uk/">University of East London</Link>
+            ,{" "}
+            <Link href="https://newhamndp.org.uk/">
+              Newham New Deal Partnership
+            </Link>
+            , <Link href="https://rosettaarts.org/">Rosetta Arts</Link>,{" "}
+            <Link href="https://www.ucl.ac.uk/">University College London</Link>
+            ,{" "}
+            <Link href="https://www.newham.gov.uk/">
+              London Borough of Newham
+            </Link>
+            ,{" "}
+            <Link href="https://www.royaldocks.london/">Royal Docks Team</Link>{" "}
+            and{" "}
+            <Link href="https://future.london/">
+              Foundation for Future London
+            </Link>{" "}
+            .
+          </p>
+
           {/* <h3>Make-up of Creative Newham</h3>
           <p>
             Creative Newham’s steering group is Chaired by Sanaz Amidi, Chief Executive of Rosetta Arts, which meets quarterly and consists of representative from nine local community and creative organisations: Certain Blacks, Caramel Rock, Newham New Deal Partnership, Rosetta Arts, University College London, London Borough of Newham, the Royal Docks and Foundation for Future London. Its wider alliance is a more informal network of 80+ organisations that are interested in or share the Creative Newham vision.              
