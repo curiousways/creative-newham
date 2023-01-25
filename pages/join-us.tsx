@@ -61,7 +61,7 @@ const Membership: NextPage = () => {
   return (
     <main className="container">
       <div className="space-y-20">
-        <Panel title="Membership">
+        <Panel title="Join Us">
           <div className="cn-text">
             <p>
               Joining the Creative Newham alliance is free. To become a member
