@@ -13,16 +13,16 @@ const navItems = [
     href: "/about/",
   },
   {
-    name: "Supporters",
-    href: "/supporters/",
-  },
-  {
     name: "News",
     href: "/news/",
   },
   {
-    name: "Membership",
+    name: "Join Us",
     href: "/membership/",
+  },
+  {
+    name: "Contact",
+    href: "/contact/",
   },
 ];
 
