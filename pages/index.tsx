@@ -97,7 +97,7 @@ const Home: NextPage = () => {
                 passHref
               >
                 <a target="_blank" rel="noreferrer">
-                  (joining details Here).
+                  (joining details here).
                 </a>
               </Link>
             </p>
