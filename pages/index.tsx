@@ -72,13 +72,32 @@ const Home: NextPage = () => {
             <h3>Skills & employment</h3>
             <p>
               We identify training and employment opportunities for young people
-              and adults, running programmes such as the Creative Newham{" "}
+              and adults, running programmes such as the{" "}
               <Link
                 href="https://rosettaarts.org/projects/creative-newham-cultural-producers-programme-2022-2023/ "
                 passHref
               >
                 <a target="_blank" rel="noreferrer">
-                  Cultural Producers programme.
+                  Creative Newham Cultural Producers
+                </a>
+              </Link>{" "}
+              programme and the
+              <Link
+                href="https://rosettaarts.org/call-out-join-our-young-creative-newham-board-and-get-your-voice-heard/ "
+                passHref
+              >
+                <a target="_blank" rel="noreferrer">
+                   Creative Newham Youth Board
+                </a>
+              </Link>{" "}
+              which gives 13-18 year olds the chance to have a say in local
+              cultural issues and gain experience in the field{" "}
+              <Link
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdL3kVCQUKqVY5JRucSBrHJHVbg25Sl5mSXu77A2RvMoIulQw/viewform "
+                passHref
+              >
+                <a target="_blank" rel="noreferrer">
+                  (joining details Here).
                 </a>
               </Link>
             </p>
