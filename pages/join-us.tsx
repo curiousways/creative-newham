@@ -64,8 +64,8 @@ const Membership: NextPage = () => {
         <Panel title="Membership">
           <div className="cn-text">
             <p>
-              To become a member and receive our quarterly newsletter, we ask
-              that you are:
+              Joining the Creative Newham alliance is free. To become a member
+              and receive our quarterly newsletter, we ask that you are:
             </p>
 
             <ul>
