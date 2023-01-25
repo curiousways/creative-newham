@@ -1,5 +1,8 @@
 import type { NextPage } from "next";
+import Link from "next/link";
+
 import { motion } from "framer-motion";
+
 import { item } from "@/lib/animations";
 import Panel from "@/components/panel/Panel";
 
@@ -41,8 +44,10 @@ const News: NextPage = () => {
             <p>
               News &amp; events for Creative Newham members. You can also find
               out what we've been up to on{" "}
-              <a href="https://www.instagram.com/creativenewham/">Instagram</a>{" "}
-              and <a href="https://twitter.com/creativenewham/">Twitter</a>.
+              <Link href="https://www.instagram.com/creativenewham/">
+                Instagram
+              </Link>{" "}
+              and <Link href="https://linkedin.com/">Linkedin</Link>.
             </p>
           </div>
         </Panel>
