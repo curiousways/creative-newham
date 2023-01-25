@@ -124,7 +124,7 @@ const About: NextPage = () => {
              .
           </p>
 
-          <h3>Steering Group</h3>
+          <h3>Our Steering Group</h3>
           <p>
             Creative Newham is supported by a steering group which meets
             quarterly and is co-ordinated by Rosetta Arts. Chaired by Sanaz
