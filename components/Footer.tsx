@@ -1,24 +1,22 @@
-import Instagram from "@/components/Instagram";
+import Link from "next/link";
+
+import Linkedin from "@/components/Linkedin";
 import Twitter from "@/components/Twitter";
 
 const siteTitle = process.env.SITE_TITLE;
 
 const social = [
   {
-    name: 'Twitter',
-    href: 'https://twitter.com/creativenewham/',
-    icon: () => (
-      <Twitter />
-    ),
-  },  
-  {
-    name: 'Instagram',
-    href: 'https://www.instagram.com/creativenewham/',
-    icon: () => (
-      <Instagram />
-    ),
+    name: "Twitter",
+    href: "https://twitter.com/creativenewham/",
+    icon: () => <Twitter />,
   },
-]
+  {
+    name: "Linkedin",
+    href: "https://linkedin.com/",
+    icon: () => <Linkedin />,
+  },
+];
 
 export default function Footer() {
   return (
@@ -26,10 +24,16 @@ export default function Footer() {
       <div className="md:flex md:justify-between">
         <div className="flex md:justify-center space-x-6 md:order-2">
           {social.map((item) => (
-            <a key={item.name} href={item.href} target="_blank" rel="noreferrer" className="text-white hover:text-cn-orange">
-              <span className="sr-only">{item.name}</span>
-              <item.icon aria-hidden="true" />
-            </a>
+            <Link
+              key={item.name}
+              href={item.href}
+              className="text-white hover:text-cn-orange cursor-pointer"
+            >
+              <a target="_blank" rel="noreferrer">
+                <span className="sr-only">{item.name}</span>
+                <item.icon aria-hidden="true" />
+              </a>
+            </Link>
           ))}
         </div>
         <div className="mt-4 md:order-1 md:mt-0">
@@ -39,5 +43,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

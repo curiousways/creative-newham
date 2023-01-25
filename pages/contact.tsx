@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Twitter from "@/components/Twitter";
-import Instagram from "@/components/Instagram";
+import Instagram from "@/components/Linkedin";
 import Email from "@/components/Email";
 import Panel from "@/components/panel/Panel";
 import SocialLink from "@/components/SocialLink";
