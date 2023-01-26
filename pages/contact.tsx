@@ -5,7 +5,7 @@ import { NextSeo } from "next-seo";
 import Twitter from "@/components/Twitter";
 import Linkedin from "@/components/Linkedin";
 import Email from "@/components/Email";
-import Panel from "@/components/Panel/Panel";
+import { Panel } from "@/components/Panel/Panel";
 import SocialLink from "@/components/SocialLink";
 
 const Contact: NextPage = () => {

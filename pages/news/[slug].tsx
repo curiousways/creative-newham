@@ -8,7 +8,7 @@ import { request } from "@/lib/datocms";
 import { SINGLE_POST_QUERY } from "@/lib/queries";
 import { FullPost } from "@/lib/types";
 
-import Panel from "@/components/Panel/Panel";
+import { Panel } from "@/components/Panel/Panel";
 
 type ReturnData = {
   post: FullPost;

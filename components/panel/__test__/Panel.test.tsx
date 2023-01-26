@@ -3,7 +3,7 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 
-import Panel from "../Panel";
+import { Panel } from "../Panel";
 
 describe("Panel", () => {
   test("Displays Title Text", () => {
