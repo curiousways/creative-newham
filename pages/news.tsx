@@ -44,9 +44,7 @@ const News: NextPage = () => {
             <p>
               News &amp; events for Creative Newham members. You can also find
               out what we've been up to on{" "}
-              <Link href="https://www.instagram.com/creativenewham/">
-                Instagram
-              </Link>{" "}
+              <Link href="https://twitter.com/creativenewham/">Twitter</Link>{" "}
               and <Link href="https://linkedin.com/">Linkedin</Link>.
             </p>
           </div>
