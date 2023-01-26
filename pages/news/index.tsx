@@ -9,7 +9,7 @@ import { request } from "@/lib/datocms";
 import { NEWSPAGE_QUERY } from "@/lib/queries";
 import { Post } from "@/lib/types";
 
-import { Panel } from "@/components/Panel/Panel";
+import Panel from "@/components/Panel/Panel";
 import NewsPost from "@/components/NewsPost/NewsPost";
 
 const posts = [

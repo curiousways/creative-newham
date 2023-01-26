@@ -11,11 +11,7 @@ type PanelProps = {
   location?: "heading" | "body";
 };
 
-export const Panel = ({
-  title,
-  children,
-  location = "heading",
-}: PanelProps) => {
+const Panel = ({ title, children, location = "heading" }: PanelProps) => {
   let viewportConfig = { once: true };
 
   return (
@@ -57,3 +53,5 @@ export const Panel = ({
     </motion.section>
   );
 };
+
+export default Panel;
