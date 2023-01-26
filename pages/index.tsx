@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import { motion } from "framer-motion";
 import { item } from "@/lib/animations";
 import Button from "@/components/Button";
-import Panel from "@/components/Panel/Panel";
+import Panel from "@/components/Panel";
 import Link from "next/link";
 
 const Home: NextPage = () => {

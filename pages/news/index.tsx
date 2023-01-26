@@ -9,8 +9,8 @@ import { request } from "@/lib/datocms";
 import { NEWSPAGE_QUERY } from "@/lib/queries";
 import { Post } from "@/lib/types";
 
-import Panel from "@/components/Panel/Panel";
-import NewsPost from "@/components/NewsPost/NewsPost";
+import Panel from "@/components/Panel";
+import NewsPost from "@/components/NewsPost";
 
 const posts = [
   {
