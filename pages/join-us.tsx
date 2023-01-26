@@ -5,7 +5,7 @@ import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
 import axios from "axios";
 
-import Panel from "@/components/Panel";
+import Panel from "@/components/panel/Panel";
 
 const Membership: NextPage = () => {
   const [inNewham, setInNewham] = useState("");

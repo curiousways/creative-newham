@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import { motion } from "framer-motion";
 import { item } from "@/lib/animations";
-import Panel from "@/components/Panel";
+import Panel from "@/components/panel/Panel";
 
 const NewsItem: NextPage = () => {
   let viewportConfig = { once: true };

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { NextSeo } from "next-seo";
 
 import ImageLink from "@/components/ImageLink";
-import Panel from "@/components/Panel";
+import Panel from "@/components/panel/Panel";
 import { supporters } from "../data/data";
 
 import WestFieldEastBank from "../public/assets/images/westfield_east_bank_creative_futures_fund.png";
