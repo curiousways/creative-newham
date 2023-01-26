@@ -11,6 +11,7 @@ type PanelProps = {
   location?: "heading" | "body";
 };
 
+// Panel
 const Panel = ({ title, children, location = "heading" }: PanelProps) => {
   let viewportConfig = { once: true };
 
