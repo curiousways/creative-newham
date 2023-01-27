@@ -43,7 +43,7 @@
   }
 
   .cn-text {
-    @apply text-white marker:text-white prose prose-a:text-white lg:prose-xl prose-headings:text-cn-orange prose-p:leading-normal prose-ul:space-y-2 prose-ol:space-y-2;
+    @apply text-white marker:text-white prose prose-a:text-white lg:prose-xl prose-headings:text-cn-orange prose-p:leading-normal prose-ul:space-y-2 prose-ol:space-y-2 prose-img:my-0 lg:prose-img:my-0;
   }
 
   .cn-btn {

@@ -48,11 +48,13 @@ const SinglePost: NextPage<ReturnData> = ({ post }) => {
                 switch (record.__typename) {
                   case "InlineImageRecord":
                     return (
-                      <Image
-                        // @ts-ignore
-                        data={record?.image.responsiveImage}
-                        className="w-full rounded-3xl object-contain mix-blend-screen opacity-70 grayscale bg-cn-orange"
-                      />
+                      <div className="my-8">
+                        <Image
+                          // @ts-ignore
+                          data={record?.image.responsiveImage}
+                          className="w-full rounded-3xl object-cover mix-blend-screen opacity-70 grayscale bg-cn-orange"
+                        />
+                      </div>
                     );
                   default:
                     return null;
