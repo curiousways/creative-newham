@@ -133,9 +133,9 @@ const About: NextPage = () => {
                 have been meeting regularly to have their say in local cultural
               issues and events. Youth Board members aged 13-18 are paid for
               their time and in return gain confidence, new skills, new friends
-              and experience in the field. Joining details are{" "}
+              and experience in the field.{" "}
               <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdL3kVCQUKqVY5JRucSBrHJHVbg25Sl5mSXu77A2RvMoIulQw/viewform">
-                here
+                Joining details are here
               </Link>
                .
             </p>
