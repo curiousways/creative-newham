@@ -15,17 +15,13 @@ const Membership: NextPage = () => {
 
   const formEl = useRef<HTMLFormElement>(null);
 
-  const validate = () => {
+  useEffect(() => {
     if (inNewham === "yes" && mobility === "yes") {
       setShowError(false);
     } else {
       setShowError(true);
     }
-  };
-
-  useEffect(() => {
-    validate();
-  }, [inNewham, mobility, validate]);
+  }, [inNewham, mobility]);
 
   useEffect(() => {
     setShowError(false);
