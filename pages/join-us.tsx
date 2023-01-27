@@ -15,14 +15,6 @@ const Membership: NextPage = () => {
 
   const formEl = useRef<HTMLFormElement>(null);
 
-  useEffect(() => {
-    validate();
-  }, [inNewham, mobility]);
-
-  useEffect(() => {
-    setShowError(false);
-  }, []);
-
   const validate = () => {
     if (inNewham === "yes" && mobility === "yes") {
       setShowError(false);
@@ -30,6 +22,14 @@ const Membership: NextPage = () => {
       setShowError(true);
     }
   };
+
+  useEffect(() => {
+    validate();
+  }, [inNewham, mobility, validate]);
+
+  useEffect(() => {
+    setShowError(false);
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.name === "inNewham") {
