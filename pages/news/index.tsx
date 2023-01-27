@@ -12,33 +12,6 @@ import { Post } from "@/lib/types";
 import Panel from "@/components/panel/Panel";
 import NewsPost from "@/components/newsPost/NewsPost";
 
-const posts = [
-  {
-    title: "Learning & workshops using fashion and textiles",
-    href: "/news-item/",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.",
-    imageUrl:
-      "https://pbs.twimg.com/media/FkhEryXWQAgewTx?format=jpg&name=large",
-  },
-  {
-    title: "Christmas Postcard Exhibition launch!",
-    href: "/news-item/",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.",
-    imageUrl:
-      "https://pbs.twimg.com/media/FjY9NHjWIAAJEQg?format=jpg&name=medium",
-  },
-  {
-    title: "Open City guides",
-    href: "/news-item/",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.",
-    imageUrl:
-      "https://pbs.twimg.com/media/FggHCszWAAIHHvF?format=jpg&name=large",
-  },
-];
-
 type ReturnData = {
   posts: Post[];
 };
