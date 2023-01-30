@@ -15,7 +15,10 @@ const NewsPost = ({ post }: Post) => {
       className="flex flex-col overflow-hidden rounded-lg shadow-lg"
     >
       <div className="flex-shrink-0">
-        <Image data={post.featuredImage.responsiveImage} />
+        <Image
+          data={post.featuredImage.responsiveImage}
+          className="w-full rounded-t object-cover mix-blend-screen opacity-70 grayscale bg-cn-orange"
+        />
       </div>
       <div className="flex flex-1 flex-col justify-between bg-white bg-opacity-10 p-6">
         <div className="flex-1">

@@ -8,7 +8,7 @@ export const NEWSPAGE_QUERY = `{
     slug
     summary
     featuredImage {
-      responsiveImage {
+      responsiveImage(imgixParams: {fit: crop, w: 1024, h: 600}, sizes: "(max-width: 1023px) 88vw, (max-width: 1279px) 45vw, 30vw") {
         ...responsiveImageFragment
       }
     }
@@ -25,7 +25,7 @@ export const SINGLE_POST_QUERY = `
       summary
       featuredImage {
         url
-        responsiveImage {
+        responsiveImage (imgixParams: {fit: crop, w: 1024, h: 600}) {
           ...responsiveImageFragment
         }
       }
@@ -39,7 +39,7 @@ export const SINGLE_POST_QUERY = `
             image { 
               url 
               title 
-              responsiveImage {
+              responsiveImage (imgixParams: {fit: crop, w: 1024, h: 600}) {
                ...responsiveImageFragment
               }
             }
