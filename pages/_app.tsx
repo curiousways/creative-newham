@@ -15,7 +15,6 @@ function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   const siteUrl = process.env.SITE_URL as string;
   const siteTitle = process.env.SITE_TITLE;
-  const siteUrlhttpsStripped = process.env.SITE_URL?.split("//")[1] as string;
 
   useEffect(() => {
     // Google Analytics
@@ -47,7 +46,7 @@ function MyApp({ Component, pageProps }: AppProps) {
               url: "/social.jpg",
               width: 1200,
               height: 630,
-              alt: "Enter social image alt text here",
+              alt: siteTitle,
             },
           ],
         }}

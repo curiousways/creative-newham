@@ -1,6 +1,7 @@
 import React from "react";
 
 import Image from "next/image";
+import Link from "next/link";
 
 import type { StaticImageData } from "next/image";
 
@@ -39,9 +40,11 @@ const ImageLink: React.FC<ImageLinkProps> = (props) => {
 
   return (
     <div className={wrapperClass}>
-      <a target="_blank" rel="noreferrer" href={props.link}>
-        <Image className={imgClass} src={props.image} alt={props.alt} />
-      </a>
+      <Link href={props.link}>
+        <a target="_blank" rel="noreferrer" aria-label={props.alt}>
+          <Image className={imgClass} src={props.image} alt={props.alt} />
+        </a>
+      </Link>
     </div>
   );
 };
