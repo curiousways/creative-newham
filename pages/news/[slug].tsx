@@ -27,7 +27,7 @@ const SinglePost: NextPage<ReturnData> = ({ post }) => {
               url: post.featuredImage.url as string,
               width: 1200,
               height: 630,
-              alt: "Enter social image alt text here",
+              alt: post.featuredImage.responsiveImage.alt,
             },
           ],
         }}
