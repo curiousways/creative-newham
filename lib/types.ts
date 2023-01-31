@@ -1,3 +1,5 @@
+import { ResponsiveImageType } from "react-datocms/image";
+
 export interface Post {
   id: string;
   title: string;
@@ -16,18 +18,5 @@ export interface FullPost extends Post {
 
 export interface FeaturedImage {
   url?: string;
-  responsiveImage: ResponsiveImage;
-}
-
-export interface ResponsiveImage {
-  srcSet: string;
-  webpSrcSet: string;
-  sizes: string;
-  src: string;
-  width: number;
-  height: number;
-  aspectRatio: number;
-  alt: string;
-  title: string;
-  base64: string;
+  responsiveImage: ResponsiveImageType;
 }
