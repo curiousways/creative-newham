@@ -95,8 +95,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   return {
     paths: data.allPosts.map((post: { slug: string }) => `/news/${post.slug}`),
-    fallback: false,
-    // fallback: "blocking",
+    fallback: "blocking",
   };
 };
 
