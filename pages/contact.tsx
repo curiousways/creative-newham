@@ -38,14 +38,14 @@ const Contact: NextPage = () => {
           <SocialLink
             icon={Linkedin}
             handle="Creative Newham"
-            url="https://www.linkedin.com/in/creative-newham-751331264/"
+            url="https://www.linkedin.com/in/creative-newham-751331264"
           >
             Linkedin
           </SocialLink>
           <SocialLink
             icon={Twitter}
             handle="@creativenewham"
-            url="https://www.twitter.com/creativenewham/"
+            url="https://www.twitter.com/creativenewham"
           >
             Twitter
           </SocialLink>

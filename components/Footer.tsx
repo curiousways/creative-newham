@@ -8,12 +8,12 @@ const siteTitle = process.env.SITE_TITLE;
 const social = [
   {
     name: "Twitter",
-    href: "https://twitter.com/creativenewham/",
+    href: "https://twitter.com/creativenewham",
     icon: () => <Twitter />,
   },
   {
     name: "Linkedin",
-    href: " https://www.linkedin.com/in/creative-newham-751331264/",
+    href: " https://www.linkedin.com/in/creative-newham-751331264",
     icon: () => <Linkedin />,
   },
 ];
