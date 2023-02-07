@@ -59,9 +59,9 @@ const Membership: NextPage = () => {
     <>
       <NextSeo
         title="Join Us - Join the Creative Newham alliance"
-        description="Join the Creative Newham alliance"
+        description="Apply to join Creative Newham"
         openGraph={{
-          description: "Join the Creative Newham alliance",
+          description: "Apply to join Creative Newham",
         }}
       />
 
@@ -75,14 +75,8 @@ const Membership: NextPage = () => {
               </p>
 
               <ul>
-                <li>
-                  a creative, community, educational, social or voluntary
-                  organisation based (or working) in Newham
-                </li>
-                <li>
-                  interested in the improvement of cultural mobility in all its
-                  forms in Newham
-                </li>
+                <li>a creative, community, educational, social or voluntary organisation or group based (or working) in Newham</li>
+                <li>want to improve cultural mobility in all its forms in Newham</li>
               </ul>
 
               <h3>Apply to join Creative Newham</h3>

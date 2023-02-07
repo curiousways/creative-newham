@@ -34,7 +34,7 @@ const News: NextPage<ReturnData> = ({ posts }) => {
                 News &amp; events for Creative Newham members. You can also find
                 out what we've been up to on{" "}
                 <Link href="https://twitter.com/creativenewham/">Twitter</Link>{" "}
-                and <Link href="https://linkedin.com/">Linkedin</Link>.
+                and <Link href="https://www.linkedin.com/in/creative-newham-751331264/">Linkedin</Link>.
               </p>
             </div>
           </Panel>

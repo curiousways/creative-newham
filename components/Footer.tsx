@@ -13,7 +13,7 @@ const social = [
   },
   {
     name: "Linkedin",
-    href: "https://linkedin.com/",
+    href: " https://www.linkedin.com/in/creative-newham-751331264/",
     icon: () => <Linkedin />,
   },
 ];

@@ -31,7 +31,7 @@ const Contact: NextPage = () => {
           <SocialLink
             icon={Linkedin}
             handle="Creative Newham"
-            url="https://linkedin.com/"
+            url="https://www.linkedin.com/in/creative-newham-751331264/"
           >
             Linkedin
           </SocialLink>
