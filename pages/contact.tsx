@@ -1,12 +1,12 @@
 import type { NextPage } from "next";
-
 import { NextSeo } from "next-seo";
-
+import Image from "next/image";
 import Twitter from "@/components/Twitter";
 import Linkedin from "@/components/Linkedin";
 import Email from "@/components/Email";
 import Panel from "@/components/panel/Panel";
 import SocialLink from "@/components/SocialLink";
+import FeaturedImg from "../public/assets/images/featured_img_contact.jpg";
 
 const Contact: NextPage = () => {
   return (
@@ -20,7 +20,14 @@ const Contact: NextPage = () => {
       />
 
       <main className="container">
+
         <Panel title="Contact">
+
+          <Image 
+            className="cn-image rounded-3xl" 
+            src={FeaturedImg} alt="Creative Newham logo" 
+          />
+
           <SocialLink
             icon={Email}
             handle="vicki@rosettaarts.org"

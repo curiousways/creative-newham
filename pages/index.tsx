@@ -4,6 +4,8 @@ import { item } from "@/lib/animations";
 import Button from "@/components/Button";
 import Panel from "@/components/panel/Panel";
 import Link from "next/link";
+import Image from "next/image";
+import FeaturedImg from "../public/assets/images/featured_img_home.jpg";
 
 const Home: NextPage = () => {
   let viewportConfig = { once: true };
@@ -28,6 +30,12 @@ const Home: NextPage = () => {
 
         <Panel title="What we do">
           <div className="cn-text">
+
+            <Image 
+              className="cn-image rounded-3xl" 
+              src={FeaturedImg} alt="Creative Newham logo" 
+            />
+
             <p>
               We work to make Newham's creative vision real for everyone in the
               borough. We’ll make sure that cultural activities involve us all

@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { NextSeo } from "next-seo";
 
+import Image from "next/image";
 import ImageLink from "@/components/ImageLink";
 import Panel from "@/components/panel/Panel";
 import { supporters } from "../data/data";
@@ -10,6 +11,7 @@ import { supporters } from "../data/data";
 import WestFieldEastBank from "../public/assets/images/westfield_east_bank_creative_futures_fund.png";
 import WestfieldCityStratford from "../public/assets/images/westfield_city_stratford.jpg";
 import FoundationForLondon from "../public/assets/images/foundation-for-future-london.png";
+import FeaturedImg from "../public/assets/images/featured_img.jpg";
 
 const About: NextPage = () => {
   return (
@@ -25,6 +27,10 @@ const About: NextPage = () => {
       <main className="container">
         <Panel title="Our story">
           <div className="cn-text">
+            <Image 
+              className="cn-image rounded-3xl" 
+              src={FeaturedImg} alt="Creative Newham logo" 
+            />
             <p>
               Creative Newham came into being in 2018, as a result of Arts
               Council England’s Creative People & Places opportunity, which

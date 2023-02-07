@@ -35,7 +35,7 @@ const SinglePost: NextPage<ReturnData> = ({ post }) => {
       <main className="container">
         <Panel title={post.title}>
           <Image
-            className="w-full rounded-3xl object-cover mix-blend-screen opacity-70 grayscale bg-cn-orange"
+            className="cn-image rounded-3xl"
             data={post.featuredImage.responsiveImage}
           />
         </Panel>
@@ -52,7 +52,7 @@ const SinglePost: NextPage<ReturnData> = ({ post }) => {
                         <Image
                           // @ts-ignore
                           data={record?.image.responsiveImage}
-                          className="w-full rounded-3xl object-cover mix-blend-screen opacity-70 grayscale bg-cn-orange"
+                          className="cn-image rounded-3xl"
                         />
                       </div>
                     );
