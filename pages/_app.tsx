@@ -31,14 +31,14 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <DefaultSeo
-        title={siteTitle}
+        title={`${siteTitle} - arts, cultural, educational, social and voluntary organisations`}
         description="The Creative Newham Alliance is an independent consortium of arts, cultural, educational, social and voluntary organisations"
         canonical={`${siteUrl}${router.asPath === "/" ? "" : router.asPath}`}
         openGraph={{
           type: "website",
           url: `${siteUrl}${router.asPath === "/" ? "" : router.asPath}`,
           site_name: siteTitle,
-          title: siteTitle,
+          title: `${siteTitle} - arts, cultural, educational, social and voluntary organisations`,
           description:
             "The Creative Newham Alliance is an independent consortium of arts, cultural, educational, social and voluntary organisations",
           images: [
