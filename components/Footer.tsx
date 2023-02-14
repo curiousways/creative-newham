@@ -38,7 +38,7 @@ export default function Footer() {
         </div>
         <div className="mt-4 md:order-1 md:mt-0">
           <p className="text-base">
-            Copyright {new Date().getFullYear()} {siteTitle}
+            Copyright {new Date().getFullYear()} Creative Newham
           </p>
         </div>
       </div>
