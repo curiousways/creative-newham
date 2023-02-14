@@ -55,6 +55,10 @@
   }
 
   .cn-image {
-    @apply w-full object-cover mix-blend-screen opacity-80 grayscale bg-cn-orange;
+    @apply w-full object-cover;
+  }
+
+  .cn-image--stylised {
+    @apply mix-blend-screen opacity-80 grayscale bg-cn-orange;
   }
 }

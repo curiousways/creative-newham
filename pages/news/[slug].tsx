@@ -37,7 +37,7 @@ const SinglePost: NextPage<ReturnData> = ({ post }) => {
         <Panel title={post.title}>
           <div className="space-y-2">
             <Image
-              className="cn-image rounded-3xl"
+              className="cn-image cn-image--stylised rounded-3xl"
               data={post.featuredImage.responsiveImage}
               priority
             />

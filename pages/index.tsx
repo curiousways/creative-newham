@@ -30,10 +30,10 @@ const Home: NextPage = () => {
 
         <Panel title="What we do">
           <div className="cn-text">
-
-            <Image 
-              className="cn-image rounded-3xl" 
-              src={FeaturedImg} alt="Creative Newham logo" 
+            <Image
+              className="cn-image cn-image--stylised rounded-3xl"
+              src={FeaturedImg}
+              alt="Creative Newham logo"
             />
 
             <p>

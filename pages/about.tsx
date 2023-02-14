@@ -27,18 +27,22 @@ const About: NextPage = () => {
       <main className="container">
         <Panel title="Our story">
           <div className="cn-text">
-            <Image 
-              className="cn-image rounded-3xl" 
-              src={FeaturedImg} alt="Creative Newham logo" 
+            <Image
+              className="cn-image cn-image--stylised rounded-3xl"
+              src={FeaturedImg}
+              alt="Creative Newham logo"
             />
             <p>
               Creative Newham came into being in 2018, as a result of Arts
               Council England’s Creative People & Places opportunity, which
-              Newham partners seized with enthusiasm across the borough. Through the process of developing this bid, lead organisation Rosetta Arts (established in 1993, with a long history of delivering community arts in Newham) brought together over 80 individuals representing over 60
-              organisations, all sharing a commitment to empowering borough
-              residents to realise their full cultural and creative potential.
-              In September 2019, Creative Newham was formalised and since then,
-              the alliance has continued to grow.
+              Newham partners seized with enthusiasm across the borough. Through
+              the process of developing this bid, lead organisation Rosetta Arts
+              (established in 1993, with a long history of delivering community
+              arts in Newham) brought together over 80 individuals representing
+              over 60 organisations, all sharing a commitment to empowering
+              borough residents to realise their full cultural and creative
+              potential. In September 2019, Creative Newham was formalised and
+              since then, the alliance has continued to grow.
             </p>
             <h3>Why Creative Newham?</h3>
             <p>
@@ -109,7 +113,27 @@ const About: NextPage = () => {
               local cultural organisation, classroom-based theory, 1-1 mentoring
               and regular supervision, with trainees receiving a training
               bursary (London Living Wage). Participating hosts for this cohort
-              are: <Link href="https://bowarts.org/">Bow Arts</Link>,{" "} <Link href="https://codydock.org.uk/">Gasworks Dock Partnership (Cody Dock)</Link>,{" "} <Link href="https://www.sustainable-fashion.com/">LCF Centre for Sustainable Fashion</Link>,{" "} <Link href="https://rosettaarts.org/">Rosetta Arts</Link>,{" "} <Link href="https://www.royaldocks.london/">Royal Docks Team</Link>,{" "} <Link href="https://socialconvention.org/">Social Convention</Link>,{" "} <Link href="https://www.stratfordeast.com/">Theatre Royal Stratford East</Link>.
+              are: <Link href="https://bowarts.org/">Bow Arts</Link>,{" "}
+              <Link href="https://codydock.org.uk/">
+                Gasworks Dock Partnership (Cody Dock)
+              </Link>
+              ,{" "}
+              <Link href="https://www.sustainable-fashion.com/">
+                LCF Centre for Sustainable Fashion
+              </Link>
+              , <Link href="https://rosettaarts.org/">Rosetta Arts</Link>,{" "}
+              <Link href="https://www.royaldocks.london/">
+                Royal Docks Team
+              </Link>
+              ,{" "}
+              <Link href="https://socialconvention.org/">
+                Social Convention
+              </Link>
+              ,{" "}
+              <Link href="https://www.stratfordeast.com/">
+                Theatre Royal Stratford East
+              </Link>
+              .
             </p>
             <p>
               The{" "}
@@ -132,7 +156,32 @@ const About: NextPage = () => {
               quarterly and is co-ordinated by Rosetta Arts. Chaired by Sanaz
               Amidi, Chief Executive of Rosetta Arts, the steering group
               consists of representatives from nine local organisations:{" "}
-              <Link href="https://certainblacks.com/">Certain Blacks</Link>,{" "} <Link href="https://caramelrock.com/">Caramel Rock</Link>,{" "} <Link href="https://future.london/">Foundation for Future London</Link>,{" "} <Link href="https://www.newham.gov.uk/">London Borough of Newham</Link>,{" "} <Link href="https://newhamndp.org.uk/">Newham New Deal Partnership</Link>,{" "} <Link href="https://rosettaarts.org/">Rosetta Arts</Link>,{" "} <Link href="https://www.royaldocks.london/">Royal Docks Team</Link>, {" "} <Link href="https://www.ucl.ac.uk/">University College London</Link>, <Link href="https://www.uel.ac.uk/">University of East London</Link>.
+              <Link href="https://certainblacks.com/">Certain Blacks</Link>,{" "}
+              <Link href="https://caramelrock.com/">Caramel Rock</Link>,{" "}
+              <Link href="https://future.london/">
+                Foundation for Future London
+              </Link>
+              ,{" "}
+              <Link href="https://www.newham.gov.uk/">
+                London Borough of Newham
+              </Link>
+              ,{" "}
+              <Link href="https://newhamndp.org.uk/">
+                Newham New Deal Partnership
+              </Link>
+              , <Link href="https://rosettaarts.org/">Rosetta Arts</Link>,{" "}
+              <Link href="https://www.royaldocks.london/">
+                Royal Docks Team
+              </Link>
+              ,{" "}
+              <Link href="https://www.ucl.ac.uk/">
+                University College London
+              </Link>
+              ,{" "}
+              <Link href="https://www.uel.ac.uk/">
+                University of East London
+              </Link>
+              .
             </p>
           </div>
         </Panel>

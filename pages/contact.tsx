@@ -20,12 +20,11 @@ const Contact: NextPage = () => {
       />
 
       <main className="container">
-
         <Panel title="Contact">
-
-          <Image 
-            className="cn-image rounded-3xl" 
-            src={FeaturedImg} alt="Creative Newham logo" 
+          <Image
+            className="cn-image cn-image--stylised rounded-3xl"
+            src={FeaturedImg}
+            alt="Creative Newham logo"
           />
 
           <SocialLink

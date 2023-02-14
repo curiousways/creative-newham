@@ -18,7 +18,7 @@ const NewsPost = ({ post }: Post) => {
         <Image
           data={post.featuredImage.responsiveImage}
           priority
-          className="cn-image"
+          className="cn-image cn-image--stylised"
         />
       </div>
       <div className="flex flex-1 flex-col justify-between bg-white bg-opacity-10 p-6">
