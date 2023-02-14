@@ -7,6 +7,7 @@ import { NextSeo } from "next-seo";
 import { request } from "@/lib/datocms";
 import { SINGLE_POST_QUERY } from "@/lib/queries";
 import { FullPost } from "@/lib/types";
+import { classNames } from "@/utils/index";
 
 import Panel from "@/components/panel/Panel";
 
@@ -57,7 +58,13 @@ const SinglePost: NextPage<ReturnData> = ({ post }) => {
                         <Image
                           // @ts-ignore
                           data={record?.image.responsiveImage}
-                          className="w-full rounded-3xl object-cover mix-blend-screen opacity-70 grayscale bg-cn-orange"
+                          className={classNames(
+                            "w-full rounded-3xl object-cover",
+                            // @ts-ignore
+                            record?.stylisedImage
+                              ? "mix-blend-screen opacity-70 grayscale bg-cn-orange"
+                              : ""
+                          )}
                         />
                         {
                           // @ts-ignore

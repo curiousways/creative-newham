@@ -35,6 +35,7 @@ export const SINGLE_POST_QUERY = `
         blocks {
           id
           __typename
+          stylisedImage
           ... on InlineImageRecord {
             id
             image { 
