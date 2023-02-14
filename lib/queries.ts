@@ -25,6 +25,7 @@ export const SINGLE_POST_QUERY = `
       summary
       featuredImage {
         url
+        title
         responsiveImage (imgixParams: {fit: crop, w: 636, h: 424}, sizes: "(max-width: 636px) 88vw, 636px") {
           ...responsiveImageFragment
         }
