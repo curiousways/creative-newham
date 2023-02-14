@@ -4,7 +4,8 @@ import type { NextPage } from "next";
 
 import { NextSeo } from "next-seo";
 import axios from "axios";
-
+import Image from "next/image";
+import FeaturedImg from "../public/assets/images/featured_img_join.jpg";
 import Panel from "@/components/panel/Panel";
 
 const Membership: NextPage = () => {
@@ -59,9 +60,9 @@ const Membership: NextPage = () => {
     <>
       <NextSeo
         title="Join Us - Creative Newham"
-        description="Join the Creative Newham alliance"
+        description="Apply to join Creative Newham"
         openGraph={{
-          description: "Join the Creative Newham alliance",
+          description: "Apply to join Creative Newham",
         }}
       />
 
@@ -69,6 +70,12 @@ const Membership: NextPage = () => {
         <div className="space-y-20">
           <Panel title="Join Us">
             <div className="cn-text">
+              <Image
+                className="cn-image rounded-3xl"
+                src={FeaturedImg}
+                alt="Creative Newham logo"
+              />
+
               <p>
                 Joining the Creative Newham alliance is free. To become a member
                 and receive our quarterly newsletter, we ask that you are:
@@ -77,11 +84,10 @@ const Membership: NextPage = () => {
               <ul>
                 <li>
                   a creative, community, educational, social or voluntary
-                  organisation based (or working) in Newham
+                  organisation or group based (or working) in Newham
                 </li>
                 <li>
-                  interested in the improvement of cultural mobility in all its
-                  forms in Newham
+                  want to improve cultural mobility in all its forms in Newham
                 </li>
               </ul>
 

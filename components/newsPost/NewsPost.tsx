@@ -18,7 +18,7 @@ const NewsPost = ({ post }: Post) => {
         <Image
           data={post.featuredImage.responsiveImage}
           priority
-          className="w-full rounded-t object-cover mix-blend-screen opacity-70 grayscale bg-cn-orange"
+          className="cn-image"
         />
       </div>
       <div className="flex flex-1 flex-col justify-between bg-white bg-opacity-10 p-6">

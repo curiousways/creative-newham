@@ -37,7 +37,7 @@ const SinglePost: NextPage<ReturnData> = ({ post }) => {
         <Panel title={post.title}>
           <div className="space-y-2">
             <Image
-              className="w-full rounded-3xl object-cover mix-blend-screen opacity-70 grayscale bg-cn-orange"
+              className="cn-image rounded-3xl"
               data={post.featuredImage.responsiveImage}
               priority
             />
@@ -60,11 +60,9 @@ const SinglePost: NextPage<ReturnData> = ({ post }) => {
                           // @ts-ignore
                           data={record?.image.responsiveImage}
                           className={classNames(
-                            "w-full rounded-3xl object-cover",
+                            "cn-image rounded-3xl",
                             // @ts-ignore
-                            record?.stylisedImage
-                              ? "mix-blend-screen opacity-70 grayscale bg-cn-orange"
-                              : ""
+                            record?.stylisedImage ? "cn-image--stylised" : ""
                           )}
                         />
                         {

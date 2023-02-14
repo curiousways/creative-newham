@@ -53,4 +53,8 @@
   .cn-message {
     @apply text-white pt-1 pb-2 px-3 inline-block rounded;
   }
+
+  .cn-image {
+    @apply w-full object-cover mix-blend-screen opacity-80 grayscale bg-cn-orange;
+  }
 }
