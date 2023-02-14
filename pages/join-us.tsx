@@ -58,7 +58,7 @@ const Membership: NextPage = () => {
   return (
     <>
       <NextSeo
-        title="Join Us - Join the Creative Newham alliance"
+        title="Join Us - Creative Newham"
         description="Join the Creative Newham alliance"
         openGraph={{
           description: "Join the Creative Newham alliance",

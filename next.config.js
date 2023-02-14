@@ -4,7 +4,8 @@ const nextConfig = {
   trailingSlash: true,
   env: {
     SITE_URL: "https://www.creativenewham.com",
-    SITE_TITLE: "Creative Newham",
+    SITE_TITLE:
+      "Creative Newham - arts, cultural, educational, social and voluntary organisations",
     GOOGLE_ANALYTICS_ID: "G-JQL4063Y0E",
     DATOCMS_API_TOKEN: "2be61068b517de07fc7c8b8a5a27a5",
   },

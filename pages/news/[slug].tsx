@@ -18,7 +18,7 @@ const SinglePost: NextPage<ReturnData> = ({ post }) => {
   return (
     <>
       <NextSeo
-        title={post.title}
+        title={`${post.title} - Creative Newham`}
         description={post.summary}
         openGraph={{
           description: post.summary,

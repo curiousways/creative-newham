@@ -20,7 +20,7 @@ const News: NextPage<ReturnData> = ({ posts }) => {
   return (
     <>
       <NextSeo
-        title="News - News & events for Creative Newham members"
+        title="News - Creative Newham"
         description="News & events for Creative Newham members"
         openGraph={{
           description: "News & events for Creative Newham members",

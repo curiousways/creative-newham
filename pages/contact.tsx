@@ -12,7 +12,7 @@ const Contact: NextPage = () => {
   return (
     <>
       <NextSeo
-        title="Contact - Contact Creative Newham"
+        title="Contact - Creative Newham"
         description="Contact Creative Newham"
         openGraph={{
           description: "Contact Creative Newham",

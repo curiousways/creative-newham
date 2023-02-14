@@ -15,7 +15,7 @@ const About: NextPage = () => {
   return (
     <>
       <NextSeo
-        title="About - About Creative Newham"
+        title="About - Creative Newham"
         description="About Creative Newham"
         openGraph={{
           description: "About Creative Newham",
