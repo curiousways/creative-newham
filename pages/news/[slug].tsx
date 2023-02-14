@@ -39,6 +39,7 @@ const SinglePost: NextPage<ReturnData> = ({ post }) => {
             <Image
               className="w-full rounded-3xl object-cover mix-blend-screen opacity-70 grayscale bg-cn-orange"
               data={post.featuredImage.responsiveImage}
+              priority
             />
             {post.featuredImage.title && (
               <p className="text-xs">{post.featuredImage.title}</p>
