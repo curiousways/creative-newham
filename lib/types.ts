@@ -18,5 +18,6 @@ export interface FullPost extends Post {
 
 export interface FeaturedImage {
   url?: string;
+  title?: string;
   responsiveImage: ResponsiveImageType;
 }

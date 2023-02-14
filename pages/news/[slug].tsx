@@ -34,10 +34,15 @@ const SinglePost: NextPage<ReturnData> = ({ post }) => {
       />
       <main className="container">
         <Panel title={post.title}>
-          <Image
-            className="w-full rounded-3xl object-cover mix-blend-screen opacity-70 grayscale bg-cn-orange"
-            data={post.featuredImage.responsiveImage}
-          />
+          <div className="space-y-2">
+            <Image
+              className="w-full rounded-3xl object-cover mix-blend-screen opacity-70 grayscale bg-cn-orange"
+              data={post.featuredImage.responsiveImage}
+            />
+            {post.featuredImage.title && (
+              <p className="text-xs">{post.featuredImage.title}</p>
+            )}
+          </div>
         </Panel>
 
         <div className="xl:ml-[224px] mt-10">
@@ -48,12 +53,23 @@ const SinglePost: NextPage<ReturnData> = ({ post }) => {
                 switch (record.__typename) {
                   case "InlineImageRecord":
                     return (
-                      <div className="my-8">
+                      <div className="my-8 space-y-2">
                         <Image
                           // @ts-ignore
                           data={record?.image.responsiveImage}
                           className="w-full rounded-3xl object-cover mix-blend-screen opacity-70 grayscale bg-cn-orange"
                         />
+                        {
+                          // @ts-ignore
+                          record?.image.title && (
+                            <p className="text-xs">
+                              {
+                                // @ts-ignore
+                                record?.image.title
+                              }
+                            </p>
+                          )
+                        }
                       </div>
                     );
                   default:
