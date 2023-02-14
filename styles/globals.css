@@ -12,7 +12,7 @@
     font-display: swap;
   }
 
-  html {
+  html:focus-within {
     scroll-behavior: smooth;
   }
 
@@ -25,24 +25,40 @@
       url("/assets/images/repeat.svg");
     background-position: 0 -70px;
     background-size: 200%;
-    @apply min-h-screen bg-cn-blue text-white md:text-xl pb-[200px];
-  }
-
-  h2 {
-    @apply text-cn-orange text-4xl md:text-[60px] leading-[60px];
-  }
-
-  h3 {
-    @apply text-cn-orange text-2xl;
+    @apply min-h-screen bg-cn-blue text-white md:text-xl;
   }
 
   a {
-    @apply underline underline-offset-4 hover:text-cn-orange transition-colors duration-300;
+    @apply text-white underline underline-offset-4 hover:text-cn-orange duration-300;
   }
 }
 
 @layer utilities {
   .container {
-    @apply px-8 md:px-16 xl:px-0 xl:ml-[108px] max-w-[865px];
+    @apply px-8 md:px-16 xl:px-5 xl:ml-[108px] max-w-[865px];
+  }
+
+  .container--wide {
+    @apply px-8 md:px-16 xl:px-5 xl:ml-[108px] max-w-screen-xl;
+  }
+
+  .cn-text {
+    @apply text-white marker:text-white prose prose-a:text-white lg:prose-xl prose-headings:text-cn-orange prose-p:leading-normal prose-ul:space-y-2 prose-ol:space-y-2 prose-img:my-0 lg:prose-img:my-0 prose-blockquote:text-white prose-strong:text-white;
+  }
+
+  .cn-btn {
+    @apply disabled:bg-gray-300 disabled:text-gray-400 text-cn-blue--contrast text-base bg-cn-orange rounded-full py-4 px-8 flex justify-center hover:bg-white hover:text-cn-blue transition-colors duration-500 no-underline hover:cursor-pointer;
+  }
+
+  .cn-message {
+    @apply text-white pt-1 pb-2 px-3 inline-block rounded;
+  }
+
+  .cn-image {
+    @apply w-full object-cover;
+  }
+
+  .cn-image--stylised {
+    @apply mix-blend-screen opacity-80 grayscale bg-cn-orange;
   }
 }

@@ -1,16 +1,11 @@
 import type { NextPage } from "next";
-
-import Link from "next/link";
-
 import { motion } from "framer-motion";
-
-import { container, item } from "@/lib/animations";
-
-import Instagram from "@/components/Instagram";
+import { item } from "@/lib/animations";
 import Button from "@/components/Button";
-import Panel from "@/components/Panel";
-
-import { supporters } from "../data/data";
+import Panel from "@/components/panel/Panel";
+import Link from "next/link";
+import Image from "next/image";
+import FeaturedImg from "../public/assets/images/featured_img_home.jpg";
 
 const Home: NextPage = () => {
   let viewportConfig = { once: true };
@@ -24,50 +19,55 @@ const Home: NextPage = () => {
           variants={item}
           className="text-xl md:text-2xl"
         >
-          Creative Newham is an independent alliance of around 70 arts,
-          cultural, educational, social and voluntary organisations committed to
-          growing and strengthening cultural mobility in all its forms in
-          Newham. Our aim is to provide a strong and connected creative vision
-          for the borough whereby everyone can benefit from creative
-          opportunities - as makers, producers, leaders, audiences and
-          participants - whatever their background or circumstances.
+          Creative Newham is an independent alliance of arts, cultural,
+          educational, social and voluntary organisations committed to growing
+          and strengthening cultural mobility in all its forms in Newham. Our
+          aim is to provide a strong and connected creative vision for the
+          borough whereby everyone can benefit from creative opportunities - as
+          makers, producers, leaders, audiences and participants - whatever
+          their background or circumstances.
         </motion.p>
-        <Panel title="What We Do">
-          <p>
-            We work to make Newham's creative vision real for everyone in the
-            borough. We’ll make sure that cultural activities involve us all and
-            will help secure continuing support for Newham’s creative future.
-          </p>
-          <div className="space-y-2">
+
+        <Panel title="What we do">
+          <div className="cn-text">
+            <Image
+              className="cn-image cn-image--stylised rounded-3xl"
+              src={FeaturedImg}
+              alt="Creative Newham logo"
+            />
+
+            <p>
+              We work to make Newham's creative vision real for everyone in the
+              borough. We’ll make sure that cultural activities involve us all
+              and will help secure continuing support for Newham’s creative
+              future.
+            </p>
+
             <h3>Advocacy & lobbying</h3>
             <p>
               We come together to respond strategically to issues and policies
               which affect our work, informing and influencing policy-making.
             </p>
-          </div>
-          <div className="space-y-2">
+
             <h3>Connection</h3>
             <p>
               We enable partners and agencies looking to work in Newham to
               engage with our extensive pan-borough creative network quickly to
               identify opportunities and work together.
             </p>
-          </div>
-          <div className="space-y-2">
+
             <h3>Collaboration & co-creation</h3>
             <p>
               We collaborate on projects we can’t do alone or those that would
               be better served with a more joined-up approach.
             </p>
-          </div>
-          <div className="space-y-2">
+
             <h3>Networking</h3>
             <p>
               We meet annually at the Creative Newham Social event and at
               smaller project-based events.
             </p>
-          </div>
-          <div className="space-y-2">
+
             <h3>Fundraising</h3>
             <p>
               We identify funding opportunities and participate in joint funding
@@ -76,107 +76,39 @@ const Home: NextPage = () => {
               Creative People and Places, securing significant funds for three
               years.
             </p>
-          </div>
-          <div className="space-y-2">
+
             <h3>Skills & employment</h3>
             <p>
               We identify training and employment opportunities for young people
-              and adults, running programmes such as the Creative Newham{" "}
+              and adults, running programmes such as the{" "}
+              <Link href="/news/cultural-producers/" passHref>
+                <a target="_blank" rel="noreferrer">
+                  Creative Newham Cultural Producers
+                </a>
+              </Link>{" "}
+              programme and the
+              <Link href="/news/creative-newham-youth-board/" passHref>
+                <a target="_blank" rel="noreferrer">
+                   Creative Newham Youth Board
+                </a>
+              </Link>{" "}
+              which gives 13-18 year olds the chance to have a say in local
+              cultural issues and gain experience in the field{" "}
               <Link
-                href="https://rosettaarts.org/projects/creative-newham-cultural-producers-programme-2022-2023/ "
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdL3kVCQUKqVY5JRucSBrHJHVbg25Sl5mSXu77A2RvMoIulQw/viewform "
                 passHref
               >
                 <a target="_blank" rel="noreferrer">
-                  Cultural Producers programme.
+                  (joining details here).
                 </a>
               </Link>
             </p>
           </div>
-          <div className="space-y-2">
-            <h3>Steering Group</h3>
-            <p>
-              Creative Newham is supported by a steering group which meets
-              quarterly and is co-ordinated by Rosetta Arts. Chaired by Sanaz
-              Amidi, Chief Executive of Rosetta Arts, the steering group
-              consists of representatives from eight local organisations:
-              Certain Blacks, Caramel Rock, Newham New Deal Partnership, Rosetta
-              Arts, University College London, London Borough of Newham, Royal
-              Docks Team and Foundation for Future London.
-            </p>
-          </div>
-          <div className="space-y-2">
-            <h3>Our Supporters</h3>
-            <ul className="space-y-2">
-              {supporters.map(({ name, link }) => (
-                <li key={name}>
-                  <Link href={link} passHref>
-                    <a target="_blank" rel="noreferrer">
-                      {name}
-                    </a>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+
+          <div className="inline-flex">
+            <Button text="Join Us" link="/join-us/" />
           </div>
         </Panel>
-
-        <Panel title="Membership">
-          <p>
-            We welcome creative, community, educational, social and voluntary
-            organisations based (or working) in Newham who have an interest in
-            the improvement of cultural mobility in the borough.
-          </p>
-          <p>Membership is free.</p>
-          <p>
-            To become a member and receive our quarterly newsletter, please
-            click here.
-          </p>
-          <div className="pt-10">
-            <Button text="Become a member" link="http://eepurl.com/h5Tk2b" />
-          </div>
-        </Panel>
-
-        <motion.section
-          variants={container}
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportConfig}
-          className="space-y-6 md:space-y-[83px]"
-        >
-          <motion.h2 variants={item} viewport={viewportConfig}>
-            Contact
-          </motion.h2>
-          <div className="space-y-8 sm:space-y-0 sm:flex sm:space-x-[83px] max-w-[646px] xl:ml-[224px]">
-            <motion.div variants={item} viewport={viewportConfig}>
-              <p className="text-cn-orange">Vicki Young </p>
-              <p>Creative Newham</p>
-              <p>Programme Manager</p>
-            </motion.div>
-            <motion.div
-              variants={item}
-              viewport={viewportConfig}
-              className="self-end"
-            >
-              <p>
-                <Link href="mailto:vicki@rosettaarts.org" passHref>
-                  <a className="no-underline">vicki@rosettaarts.org</a>
-                </Link>
-              </p>
-              <p className="group">
-                <Link href="https://www.instagram.com/creativenewham/" passHref>
-                  <a
-                    className="flex space-x-2 items-center group-hover:text-cn-orange transition-colors duration-300 text-white no-underline"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Instagram />
-                    <span>@creativenewham</span>
-                  </a>
-                </Link>
-              </p>
-            </motion.div>
-          </div>
-        </motion.section>
       </div>
     </main>
   );

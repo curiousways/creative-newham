@@ -19,9 +19,14 @@ module.exports = {
       },
       colors: {
         "cn-blue": "#402EC1",
+        "cn-blue--contrast": "#000c9c",
         "cn-orange": "#FFA700",
+        "cn-orange--contrast": "#894500",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+  ],
 };

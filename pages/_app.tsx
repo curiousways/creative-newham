@@ -3,7 +3,8 @@ import { useEffect } from "react";
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import { DefaultSeo } from "next-seo";
-import * as Fathom from "fathom-client";
+
+import * as gtag from "../lib/gtag";
 
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
@@ -14,19 +15,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   const siteUrl = process.env.SITE_URL as string;
   const siteTitle = process.env.SITE_TITLE;
-  const fathom = process.env.FATHOM_ANALYTICS_ID as string; //fathom analytics id
-  const siteUrlhttpsStripped = process.env.SITE_URL?.split("//")[1] as string;
 
   useEffect(() => {
-    // Load fathom analytics
-    Fathom.load(fathom, {
-      includedDomains: [siteUrlhttpsStripped],
-      excludedDomains: ["localhost", "*.vercel.app"],
-    });
-
-    // Fathom Analytics
-    const handleRouteChange = () => {
-      Fathom.trackPageview();
+    // Google Analytics
+    const handleRouteChange = (url: URL) => {
+      gtag.pageview(url);
     };
 
     router.events.on("routeChangeComplete", handleRouteChange);
@@ -38,14 +31,14 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <DefaultSeo
-        title={siteTitle}
+        title={`${siteTitle} - arts, cultural, educational, social and voluntary organisations`}
         description="The Creative Newham Alliance is an independent consortium of arts, cultural, educational, social and voluntary organisations"
         canonical={`${siteUrl}${router.asPath === "/" ? "" : router.asPath}`}
         openGraph={{
           type: "website",
           url: `${siteUrl}${router.asPath === "/" ? "" : router.asPath}`,
           site_name: siteTitle,
-          title: siteTitle,
+          title: `${siteTitle} - arts, cultural, educational, social and voluntary organisations`,
           description:
             "The Creative Newham Alliance is an independent consortium of arts, cultural, educational, social and voluntary organisations",
           images: [
@@ -53,7 +46,7 @@ function MyApp({ Component, pageProps }: AppProps) {
               url: "/social.jpg",
               width: 1200,
               height: 630,
-              alt: "Enter social image alt text here",
+              alt: siteTitle,
             },
           ],
         }}
@@ -63,8 +56,11 @@ function MyApp({ Component, pageProps }: AppProps) {
           cardType: "summary_large_image",
         }}
       />
-      <Nav />
-      <Component {...pageProps} />
+      <div className="flex flex-col min-h-screen">
+        <Nav />
+        <Component {...pageProps} />
+        <Footer />
+      </div>
     </>
   );
 }
