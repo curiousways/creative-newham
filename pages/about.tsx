@@ -32,18 +32,7 @@ const About: NextPage = () => {
               src={FeaturedImg}
               alt="Creative Newham logo"
             />
-            <p>
-              Creative Newham came into being in 2018, as a result of Arts
-              Council England’s Creative People & Places opportunity, which
-              Newham partners seized with enthusiasm across the borough. Through
-              the process of developing this bid, lead organisation Rosetta Arts
-              (established in 1993, with a long history of delivering community
-              arts in Newham) brought together over 80 individuals representing
-              over 60 organisations, all sharing a commitment to empowering
-              borough residents to realise their full cultural and creative
-              potential. In September 2019, Creative Newham was formalised and
-              since then, the alliance has continued to grow.
-            </p>
+            <p>Creative Newham began in 2018, as a result of Arts Council England’s Creative People & Places opportunity, which Newham partners seized with enthusiasm across the borough. Through the process of developing this bid, cultural leader Sanaz Amidi, who was Chief Exec of Rosetta Arts until 2023 (established in 1993, with a long history of delivering community arts in Newham) brought together over 80 individuals representing over 60 organisations, all sharing a commitment to empowering borough residents to realise their full cultural and creative potential. In September 2019, Creative Newham was formalised with Sanaz Amidi as Chair and since then, the alliance has continued to grow.</p>
             <h3>Why Creative Newham?</h3>
             <p>
               Despite a dramatic and positive growth in prosperity as Newham
@@ -61,48 +50,28 @@ const About: NextPage = () => {
               disadvantaged in the UK.
             </p>
             <p>
-              Cultural investment in the borough is amongst the lowest in London
-              and as a consequence Newham has the second lowest level of
-              cultural engagement of all the London boroughs at 36.6% (the
-              lowest, Barking & Dagenham, is already an established Creative
-              People & Places place).
+              Cultural investment in the borough is amongst the lowest in London and as a consequence Newham has the second lowest level of cultural engagement of all the London boroughs at 36.6% (the lowest, Barking & Dagenham, is already an established Creative People & Places place).
             </p>
             <p>There is, however:</p>
             <ul>
               <li>
-                a rich and diverse network of ‘under the radar’ cultural
-                activity organised by artist groups, faith-based organisations
-                and community groups
+                a rich and diverse network of ‘under the radar’ cultural activity organised by artist groups, faith-based organisations and community groups
               </li>
               <li>
-                a successful history of small-scale entrepreneurship with a
-                large number of independent shops and services catering for the
-                local community
+                a successful history of small-scale entrepreneurship with a large number of independent shops and services catering for the local community
               </li>
               <li>
-                a positive view of the borough’s ethnic and cultural diversity
-                amongst residents; 9 in 10 agree that ‘people from different
-                backgrounds get on well in my local area’ and the proportion of
-                residents with friends entirely from their own ethnic background
-                is just 9% (Understanding Newham 2019)
+                a positive view of the borough’s ethnic and cultural diversity amongst residents; 9 in 10 agree that ‘people from different backgrounds get on well in my local area’ and the proportion of residents with friends entirely from their own ethnic background is just 9% (Understanding Newham 2019)
               </li>
             </ul>
             <p>
-              Our vision for Creative Newham is a borough where everyone can
-              benefit from creative opportunities – as makers, producers,
-              leaders, audiences and participants – whatever their background or
-              circumstances.
+              Our vision for Creative Newham is a borough where everyone can benefit from creative opportunities – as makers, producers, leaders, audiences and participants – whatever their background or circumstances.
             </p>
             <p>
-              Over the next 10 years we hope to contribute to a Newham where
-              homegrown creative talent is recognised and rewarded both within
-              and beyond the borough; where residents respect and value
-              different cultures and are proud of their neighbourhood; and where
-              people have the confidence and the opportunity to lead and enjoy a
-              wide range of creative activities.
+              Over the next 10 years we hope to contribute to a Newham where homegrown creative talent is recognised and rewarded both within and beyond the borough; where residents respect and value different cultures and are proud of their neighbourhood; and where people have the confidence and the opportunity to lead and enjoy a wide range of creative activities.
             </p>
 
-            <h3>Our current programmes</h3>
+            <h3>Our current programmes</h3>           
             <p>
               The pilot 
               <Link href="https://rosettaarts.org/projects/creative-newham-cultural-producers-programme-2022-2023/">
@@ -112,8 +81,8 @@ const About: NextPage = () => {
               producers under the age of 30. It includes a 45-day placement in a
               local cultural organisation, classroom-based theory, 1-1 mentoring
               and regular supervision, with trainees receiving a training
-              bursary (London Living Wage). Participating hosts for this cohort
-              are: <Link href="https://bowarts.org/">Bow Arts</Link>,{" "}
+              bursary (London Living Wage). There will be opportunities for local organisations to apply to be hosts.
+              Previous participating hosts for the 2022 cohort were: <Link href="https://bowarts.org/">Bow Arts</Link>,{" "}
               <Link href="https://codydock.org.uk/">
                 Gasworks Dock Partnership (Cody Dock)
               </Link>
@@ -140,22 +109,16 @@ const About: NextPage = () => {
               <Link href="https://rosettaarts.org/call-out-join-our-young-creative-newham-board-and-get-your-voice-heard/">
                 Creative Newham Youth Board
               </Link>
-                have been meeting regularly to have their say in local cultural
-              issues and events. Youth Board members aged 13-18 are paid for
-              their time and in return gain confidence, new skills, new friends
-              and experience in the field.{" "}
+              were meeting regularly to have their say in local cultural issues and events. Youth Board members aged 13-18 were paid for their time and in return gained confidence, new skills, new friends and experience in the field. We are looking for new members to join the new cohort of CN Youth Board members. {" "}
               <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdL3kVCQUKqVY5JRucSBrHJHVbg25Sl5mSXu77A2RvMoIulQw/viewform">
                 Joining details are here
               </Link>
-               .
+              .
             </p>
 
             <h3>Our Steering Group</h3>
             <p>
-              Creative Newham is supported by a steering group which meets
-              quarterly and is co-ordinated by Rosetta Arts. Chaired by Sanaz
-              Amidi, Chief Executive of Rosetta Arts, the steering group
-              consists of representatives from nine local organisations:{" "}
+            Creative Newham is supported by a steering group which meets quarterly and is coordinated by University of East London. Chaired by Sanaz Amidi, the steering group consists of representatives from eleven local organisations: {" "}
               <Link href="https://certainblacks.com/">Certain Blacks</Link>,{" "}
               <Link href="https://caramelrock.com/">Caramel Rock</Link>,{" "}
               <Link href="https://future.london/">
@@ -169,7 +132,7 @@ const About: NextPage = () => {
               <Link href="https://newhamndp.org.uk/">
                 Newham New Deal Partnership
               </Link>
-              , <Link href="https://rosettaarts.org/">Rosetta Arts</Link>,{" "}
+              ,{" "}
               <Link href="https://www.royaldocks.london/">
                 Royal Docks Team
               </Link>
@@ -180,6 +143,18 @@ const About: NextPage = () => {
               ,{" "}
               <Link href="https://www.uel.ac.uk/">
                 University of East London
+              </Link>
+              ,{" "}
+              <Link href="https://www.queenelizabetholympicpark.co.uk/east-bank/">
+                East Bank
+              </Link>
+              ,{" "}
+              <Link href="https://www.creativeschools.london/our-story-of-change/">
+                London Legacy Development Corporation and Creative Schools
+              </Link>    
+              ,{" "}
+              <Link href="https://www.creativeschools.london/elcea/">
+                East London Cultural Education Alliance
               </Link>
               .
             </p>

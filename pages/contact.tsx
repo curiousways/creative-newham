@@ -29,8 +29,8 @@ const Contact: NextPage = () => {
 
           <SocialLink
             icon={Email}
-            handle="vicki@rosettaarts.org"
-            url="mailto:vicki@rosettaarts.org"
+            handle="sanaz@creativenewham.com"
+            url="mailto:sanaz@creativenewham.com"
           >
             Email
           </SocialLink>

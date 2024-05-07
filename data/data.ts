@@ -1,6 +1,10 @@
 import RoyalDocks from "../public/assets/images/royal-docks.png";
 import LondonBoroughOfNewham from "../public/assets/images/newham.png";
-import RosettaArts from "../public/assets/images/rosetta.png";
+import UniversityEastLondon from "../public/assets/images/uel.png";
+import ArtsCouncilEngland from "../public/assets/images/ace.png";
+import HeritageFund from "../public/assets/images/hf.png";
+import UniLondon from "../public/assets/images/ucl.png";
+import LegacyLondon from "../public/assets/images/ll.png";
 
 export const members = [
   {
@@ -81,8 +85,28 @@ export const supporters = [
     imageUrl: LondonBoroughOfNewham,
   },
   {
-    title: "Rosetta Arts",
-    href: "https://rosettaarts.org/",
-    imageUrl: RosettaArts,
+    title: "UEL",
+    href: "https://uel.ac.uk/",
+    imageUrl: UniversityEastLondon,
+  }, 
+  {
+    title: "Heritage Fund",
+    href: "https://www.heritagefund.org.uk/",
+    imageUrl: HeritageFund,
   },
+  {
+    title: "UCL",
+    href: "https://www.ucl.ac.uk/",
+    imageUrl: UniLondon,
+  },  
+  {
+    title: "Legacy Corporation - London",
+    href: "https://www.queenelizabetholympicpark.co.uk/legacy-corporation",
+    imageUrl: LegacyLondon,
+  },
+  {
+    title: "Arts Council England",
+    href: "https://www.artscouncil.org.uk/",
+    imageUrl: ArtsCouncilEngland,
+  },   
 ];
