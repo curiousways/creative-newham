@@ -107,9 +107,8 @@ const About: NextPage = () => {
             <p>
               The{" "}
               <Link href="https://rosettaarts.org/call-out-join-our-young-creative-newham-board-and-get-your-voice-heard/">
-                Creative Newham Youth Board
-              </Link>
-               were meeting regularly to have their say in local cultural issues and events. Youth Board members aged 13-18 were paid for their time and in return gained confidence, new skills, new friends and experience in the field. We are looking for new members to join the new cohort of CN Youth Board members. {" "}
+                Creative Newham Youth Board 
+              </Link> were meeting regularly to have their say in local cultural issues and events. Youth Board members aged 13-18 were paid for their time and in return gained confidence, new skills, new friends and experience in the field. We are looking for new members to join the new cohort of CN Youth Board members. {" "}
               <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdL3kVCQUKqVY5JRucSBrHJHVbg25Sl5mSXu77A2RvMoIulQw/viewform">
                 Joining details are here
               </Link>
