@@ -5,6 +5,8 @@ import ArtsCouncilEngland from "../public/assets/images/ace.png";
 import HeritageFund from "../public/assets/images/hf.png";
 import UniLondon from "../public/assets/images/ucl.png";
 import LegacyLondon from "../public/assets/images/ll.png";
+import FoundationForLondon from "../public/assets/images/foundation-for-future-london.png";
+import WestFieldEastBank from "../public/assets/images/westfield_creative_futures_fund.png";
 
 export const members = [
   {
@@ -75,6 +77,16 @@ export const steeringGroup = [
 
 export const supporters = [
   {
+    title: "Arts Council England",
+    href: "https://www.artscouncil.org.uk/",
+    imageUrl: ArtsCouncilEngland,
+  },   
+  {
+    title: "Heritage Fund",
+    href: "https://www.heritagefund.org.uk/",
+    imageUrl: HeritageFund,
+  },  
+  {
     title: "Royal Docks",
     href: "https://www.royaldocks.london/",
     imageUrl: RoyalDocks,
@@ -85,28 +97,28 @@ export const supporters = [
     imageUrl: LondonBoroughOfNewham,
   },
   {
-    title: "UEL",
-    href: "https://uel.ac.uk/",
-    imageUrl: UniversityEastLondon,
-  }, 
-  {
-    title: "Heritage Fund",
-    href: "https://www.heritagefund.org.uk/",
-    imageUrl: HeritageFund,
+    title: "Westfield East Bank Creative Futures Fund",
+    href: "https://future.london/programme/westfield-east-bank-creative-futures-fund/",
+    imageUrl: WestFieldEastBank,
   },
-  {
-    title: "UCL",
-    href: "https://www.ucl.ac.uk/",
-    imageUrl: UniLondon,
-  },  
   {
     title: "Legacy Corporation - London",
     href: "https://www.queenelizabetholympicpark.co.uk/legacy-corporation",
     imageUrl: LegacyLondon,
-  },
+  },  
   {
-    title: "Arts Council England",
-    href: "https://www.artscouncil.org.uk/",
-    imageUrl: ArtsCouncilEngland,
+    title: "UEL",
+    href: "https://uel.ac.uk/",
+    imageUrl: UniversityEastLondon,
   },   
+  {
+    title: "UCL",
+    href: "https://www.ucl.ac.uk/",
+    imageUrl: UniLondon,
+  },    
+  {
+    title: "Foundation For London",
+    href: "https://future.london/",
+    imageUrl: FoundationForLondon,
+  },
 ];

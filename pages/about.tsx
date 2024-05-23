@@ -1,16 +1,10 @@
 import type { NextPage } from "next";
 import Link from "next/link";
-
 import { NextSeo } from "next-seo";
-
 import Image from "next/image";
 import ImageLink from "@/components/ImageLink";
 import Panel from "@/components/panel/Panel";
 import { supporters } from "../data/data";
-
-import WestFieldEastBank from "../public/assets/images/westfield_east_bank_creative_futures_fund.png";
-import WestfieldCityStratford from "../public/assets/images/westfield_city_stratford.jpg";
-import FoundationForLondon from "../public/assets/images/foundation-for-future-london.png";
 import FeaturedImg from "../public/assets/images/featured_img.jpg";
 
 const About: NextPage = () => {
@@ -77,12 +71,7 @@ const About: NextPage = () => {
               <Link href="https://rosettaarts.org/projects/creative-newham-cultural-producers-programme-2022-2023/">
                 Creative Newham Cultural Producers programme
               </Link>
-               provides a comprehensive training programme to local emerging
-              producers under the age of 30. It includes a 45-day placement in a
-              local cultural organisation, classroom-based theory, 1-1 mentoring
-              and regular supervision, with trainees receiving a training
-              bursary (London Living Wage). There will be opportunities for local organisations to apply to be hosts.
-              Previous participating hosts for the 2022 cohort were: <Link href="https://bowarts.org/">Bow Arts</Link>,{" "}
+               provides a comprehensive training programme to local emerging producers under the age of 30. It includes a 45-day placement in a local cultural organisation, classroom-based theory, 1-1 mentoring and regular supervision, with trainees receiving a training bursary (London Living Wage). There will be opportunities for local organisations to apply to be hosts. Previous participating hosts for the 2022 cohort were: <Link href="https://bowarts.org/">Bow Arts</Link>,{" "}
               <Link href="https://codydock.org.uk/">
                 Gasworks Dock Partnership (Cody Dock)
               </Link>
@@ -113,6 +102,21 @@ const About: NextPage = () => {
                 Joining details are here
               </Link>
               .
+            </p>
+            <p>
+              Following the success of the pilot of our Cultural Producers programme in 2022-23, in November 2023, we received thrilling news of our success in securing funding from Arts Council England's Place-based Partnerships fund to scale up the programme through Newham's Place Partnership programme. This achievement has unlocked support from other major funders like the Royal Docks, NLHF, Foundation for Future London, LLDC, UEL, UCL East and Newham Council. Over the next three years, this funding and support will enable us to deliver two key initiatives:              
+            </p>
+            <p>
+              Firstly, our Cultural Producers training programme will provide residents with access to employment opportunities in the cultural, heritage, and cross-sectoral fields, aligning with Newham's inclusive economy vision, including developments in East Bank and the Royal Docks.
+            </p>
+            <p>
+              Secondly, our Powerful Partnerships strand will strengthen collaboration across sectors, establishing Newham as a beacon of partnership excellence. Through strategic and effective alliance-building, we aim to advocate for the sector's voice both locally and beyond, driving improved cultural mobility in the borough.              
+            </p>
+            <p>
+              This ambitious programme, managed and led by UEL, reflects our vision for a Newham where creative opportunities are accessible to all, regardless of background or circumstance. Over the next decade, we'll address the shortage of local and diverse producers, recognise the multifaceted skills required in the role, and champion the value of creative thinking and activities.              
+            </p>
+            <p>
+              Crucial to our success is the support and expertise of our member organisations and their leaders. We'll be rolling out various opportunities throughout the programme, so stay tuned for updates by signing up to our member bi-monthly newsletters. To become a member you can <Link href="/join-us/">join us, for free here</Link>.
             </p>
 
             <h3>Our Steering Group</h3>
@@ -163,31 +167,6 @@ const About: NextPage = () => {
         {/* Supporters */}
         <Panel title="Our Supporters" location="body">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-6">
-            {/* Full */}
-            <ImageLink
-              link="https://future.london/programme/westfield-east-bank-creative-futures-fund/"
-              image={WestFieldEastBank}
-              alt="Westfield East Bank Creative Futures Fund"
-              wrapperClassName="sm:col-span-6"
-            />
-
-            {/* Half */}
-            <ImageLink
-              link="https://uk.westfield.com/stratfordcity/homepage"
-              image={WestfieldCityStratford}
-              alt="Westfield City Stratford"
-              imgClassName="h-28 w-full"
-              wrapperClassName="sm:col-span-3"
-            />
-
-            {/* Half */}
-            <ImageLink
-              link="https://future.london/"
-              image={FoundationForLondon}
-              alt="Westfield City Stratford"
-              wrapperClassName="sm:col-span-3"
-            />
-
             {/* Thirds */}
             {supporters.map((logo) => (
               <ImageLink
@@ -195,7 +174,7 @@ const About: NextPage = () => {
                 image={logo.imageUrl}
                 alt={logo.title}
                 key={logo.title}
-                wrapperClassName="sm:col-span-2"
+                wrapperClassName="sm:col-span-2" 
               />
             ))}
           </div>

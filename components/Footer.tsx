@@ -24,16 +24,16 @@ export default function Footer() {
       <div className="md:flex md:justify-between">
         <div className="flex md:justify-center space-x-6 md:order-2">
           {social.map((item) => (
-            <Link
+            <a
               key={item.name}
               href={item.href}
               className="text-white hover:text-cn-orange cursor-pointer"
+              target="_blank"
+              rel="noreferrer"
             >
-              <a target="_blank" rel="noreferrer">
-                <span className="sr-only">{item.name}</span>
-                <item.icon aria-hidden="true" />
-              </a>
-            </Link>
+              <span className="sr-only">{item.name}</span>
+              <item.icon aria-hidden="true" />
+            </a>
           ))}
         </div>
         <div className="mt-4 md:order-1 md:mt-0">
