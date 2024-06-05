@@ -6,6 +6,9 @@ import ImageLink from "@/components/ImageLink";
 import Panel from "@/components/panel/Panel";
 import { supporters } from "../data/data";
 import FeaturedImg from "../public/assets/images/featured_img.jpg";
+import WestFieldEastBank from "../public/assets/images/westfield_east_bank_creative_futures_fund.png";
+import WestfieldCityStratford from "../public/assets/images/westfield_city_stratford.jpg";
+import FoundationForLondon from "../public/assets/images/foundation-for-future-london.png";
 
 const About: NextPage = () => {
   return (
@@ -65,34 +68,21 @@ const About: NextPage = () => {
               Over the next 10 years we hope to contribute to a Newham where homegrown creative talent is recognised and rewarded both within and beyond the borough; where residents respect and value different cultures and are proud of their neighbourhood; and where people have the confidence and the opportunity to lead and enjoy a wide range of creative activities.
             </p>
 
-            <h3>Our current programmes</h3>           
-            <p>
-              The pilot 
-              <Link href="https://rosettaarts.org/projects/creative-newham-cultural-producers-programme-2022-2023/">
-                Creative Newham Cultural Producers programme
-              </Link>
-               provides a comprehensive training programme to local emerging producers under the age of 30. It includes a 45-day placement in a local cultural organisation, classroom-based theory, 1-1 mentoring and regular supervision, with trainees receiving a training bursary (London Living Wage). There will be opportunities for local organisations to apply to be hosts. Previous participating hosts for the 2022 cohort were: <Link href="https://bowarts.org/">Bow Arts</Link>,{" "}
-              <Link href="https://codydock.org.uk/">
-                Gasworks Dock Partnership (Cody Dock)
-              </Link>
-              ,{" "}
-              <Link href="https://www.sustainable-fashion.com/">
-                LCF Centre for Sustainable Fashion
-              </Link>
-              , <Link href="https://rosettaarts.org/">Rosetta Arts</Link>,{" "}
-              <Link href="https://www.royaldocks.london/">
-                Royal Docks Team
-              </Link>
-              ,{" "}
-              <Link href="https://socialconvention.org/">
-                Social Convention
-              </Link>
-              ,{" "}
-              <Link href="https://www.stratfordeast.com/">
-                Theatre Royal Stratford East
-              </Link>
-              .
-            </p>
+            <h3>Our current programmes</h3>  
+            <h4>Creative Newham’s Place Partnerships Programme</h4>         
+            <p>From 2024 onwards, UEL will be leading a programme called ‘Newham’s Place Partnerships’ that is funded by Arts Council England’s Place-based Partnerships fund and other major funders. This is an ambitious Creative Newham programme, of which UEL has been appointed the managing and accountable lead delivery organisation.</p>
+            <p>Creative Newham’s 3-year place-based powerful partnerships programme offers </p>
+            <p>1. cross-sector <span className="text-cn-orange">Cultural Producers</span> training, giving residents access to cultural, heritage & cross-sectoral employment in Newham’s new inclusive economy including East Bank and Royal Docks.</p>
+            <p>2. a <span className="text-cn-orange">Powerful Partnerships</span> strand that will strengthen Newham's powerful partnership working, resulting in strategic and effective diverse alliance, acknowledged as model of best practice in partnership and having a strong voice for the sector in Newham and beyond through continued joined up strategic working of the membership for the wider benefit of improved cultural mobility in the borough.</p>
+            <p>The programme’s vision is for a Newham where everyone can benefit from creative opportunities - as makers, producers, leaders, audiences and participants - whatever their background or circumstances.</p>
+            <p>Our 10-year vision responds to:</p>
+            <ul>
+              <li>the dearth of local producers, and diverse producers in particular</li>
+              <li>the multifaceted skills required of a producer</li>
+              <li>a growing recognition of the value of creative thinking and creative activities</li>
+            </ul>
+            <p>The programme was piloted in 2022-23 and known as the <a href="https://rosettaarts.org/projects/creative-newham-cultural-producers-programme-2022-2023/">Creative Newham Cultural Producers</a> programme, which provided a comprehensive training programme to local emerging producers under the age of 30. It included a 45-day placement in a local cultural organisation, classroom-based theory, 1-1 mentoring and regular supervision, with trainees receiving a training bursary (London Living Wage). Previous participating hosts for the 2022 cohort were: <a href="https://bowarts.org/">Bow Arts</a>, <a href="https://codydock.org.uk/">Gasworks Dock Partnership</a> (Cody Dock), <a href="https://www.sustainable-fashion.com/">LCF Centre for Sustainable Fashion</a>, <a href="https://rosettaarts.org/">Rosetta Arts</a>, <a href="https://www.royaldocks.london/">Royal Docks Team</a>, <a href="https://socialconvention.org/">Social Convention</a>, <a href="https://www.stratfordeast.com/">Theatre Royal Stratford East</a>.</p>
+            <p>There will be on-going opportunities to apply to get involved either as a host, a cultural producer, a delivery agent and/or an attendee. All opportunities for alliance members will be posted on our newsletter, which you can access if you are a member. </p>
             <p>
               The{" "}
               <Link href="https://rosettaarts.org/call-out-join-our-young-creative-newham-board-and-get-your-voice-heard/">
@@ -121,7 +111,7 @@ const About: NextPage = () => {
 
             <h3>Our Steering Group</h3>
             <p>
-            Creative Newham is supported by a steering group which meets quarterly and is coordinated by University of East London. Chaired by Sanaz Amidi, the steering group consists of representatives from eleven local organisations: {" "}
+            Creative Newham is supported by a steering group which meets quarterly and is coordinated by the University of East London. Chaired by Sanaz Amidi, the steering group consists of representatives from eleven local organisations: {" "}
               <Link href="https://certainblacks.com/">Certain Blacks</Link>,{" "}
               <Link href="https://caramelrock.com/">Caramel Rock</Link>,{" "}
               <Link href="https://future.london/">
@@ -165,8 +155,48 @@ const About: NextPage = () => {
         </Panel>
 
         {/* Supporters */}
-        <Panel title="Our Supporters" location="body">
+        {/* <Panel title="Our Supporters" location="body">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-6">
+            {supporters.map((logo) => (
+              <ImageLink
+                link={logo.href}
+                image={logo.imageUrl}
+                alt={logo.title}
+                key={logo.title}
+                wrapperClassName="sm:col-span-2" 
+              />
+            ))}
+          </div>
+        </Panel> */}
+
+        {/* Funders */}
+        <Panel title="Our Funders" location="body">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-6">
+            
+            {/* <ImageLink
+              link="https://future.london/programme/westfield-east-bank-creative-futures-fund/"
+              image={WestFieldEastBank}
+              alt="Westfield East Bank Creative Futures Fund"
+              wrapperClassName="sm:col-span-6"
+            />
+
+            
+            <ImageLink
+              link="https://uk.westfield.com/stratfordcity/homepage"
+              image={WestfieldCityStratford}
+              alt="Westfield City Stratford"
+              imgClassName="h-28 w-full"
+              wrapperClassName="sm:col-span-3"
+            />
+
+            
+            <ImageLink
+              link="https://future.london/"
+              image={FoundationForLondon}
+              alt="Westfield City Stratford"
+              wrapperClassName="sm:col-span-3"
+            /> */}
+
             {/* Thirds */}
             {supporters.map((logo) => (
               <ImageLink
@@ -178,7 +208,7 @@ const About: NextPage = () => {
               />
             ))}
           </div>
-        </Panel>
+        </Panel>        
       </main>
     </>
   );

@@ -77,6 +77,11 @@ export const steeringGroup = [
 
 export const supporters = [
   {
+    title: "UEL",
+    href: "https://uel.ac.uk/",
+    imageUrl: UniversityEastLondon,
+  },     
+  {
     title: "Arts Council England",
     href: "https://www.artscouncil.org.uk/",
     imageUrl: ArtsCouncilEngland,
@@ -87,38 +92,33 @@ export const supporters = [
     imageUrl: HeritageFund,
   },  
   {
-    title: "Royal Docks",
-    href: "https://www.royaldocks.london/",
-    imageUrl: RoyalDocks,
-  },
-  {
-    title: "London Borough of Newham",
-    href: "https://www.newham.gov.uk/",
-    imageUrl: LondonBoroughOfNewham,
-  },
-  {
-    title: "Westfield East Bank Creative Futures Fund",
-    href: "https://future.london/programme/westfield-east-bank-creative-futures-fund/",
-    imageUrl: WestFieldEastBank,
-  },
+    title: "UCL",
+    href: "https://www.ucl.ac.uk/",
+    imageUrl: UniLondon,
+  }, 
   {
     title: "Legacy Corporation - London",
     href: "https://www.queenelizabetholympicpark.co.uk/legacy-corporation",
     imageUrl: LegacyLondon,
-  },  
+  }, 
   {
-    title: "UEL",
-    href: "https://uel.ac.uk/",
-    imageUrl: UniversityEastLondon,
-  },   
-  {
-    title: "UCL",
-    href: "https://www.ucl.ac.uk/",
-    imageUrl: UniLondon,
-  },    
+    title: "London Borough of Newham",
+    href: "https://www.newham.gov.uk/",
+    imageUrl: LondonBoroughOfNewham,
+  },      
+  // {
+  //   title: "Royal Docks",
+  //   href: "https://www.royaldocks.london/",
+  //   imageUrl: RoyalDocks,
+  // },
   {
     title: "Foundation For London",
     href: "https://future.london/",
     imageUrl: FoundationForLondon,
   },
+  {
+    title: "Westfield East Bank Creative Futures Fund",
+    href: "https://future.london/programme/westfield-east-bank-creative-futures-fund/",
+    imageUrl: WestFieldEastBank,
+  }
 ];
