@@ -77,6 +77,11 @@ export const steeringGroup = [
 
 export const supporters = [
   {
+    title: "Royal Docks",
+    href: "https://www.royaldocks.london/",
+    imageUrl: RoyalDocks,
+  },  
+  {
     title: "UEL",
     href: "https://uel.ac.uk/",
     imageUrl: UniversityEastLondon,
@@ -97,20 +102,10 @@ export const supporters = [
     imageUrl: UniLondon,
   }, 
   {
-    title: "Legacy Corporation - London",
-    href: "https://www.queenelizabetholympicpark.co.uk/legacy-corporation",
-    imageUrl: LegacyLondon,
-  }, 
-  {
     title: "London Borough of Newham",
     href: "https://www.newham.gov.uk/",
     imageUrl: LondonBoroughOfNewham,
   },      
-  // {
-  //   title: "Royal Docks",
-  //   href: "https://www.royaldocks.london/",
-  //   imageUrl: RoyalDocks,
-  // },
   {
     title: "Foundation For London",
     href: "https://future.london/",
@@ -120,5 +115,10 @@ export const supporters = [
     title: "Westfield East Bank Creative Futures Fund",
     href: "https://future.london/programme/westfield-east-bank-creative-futures-fund/",
     imageUrl: WestFieldEastBank,
-  }
+  },
+  {
+    title: "Legacy Corporation - London",
+    href: "https://www.queenelizabetholympicpark.co.uk/legacy-corporation",
+    imageUrl: LegacyLondon,
+  },   
 ];

@@ -69,20 +69,37 @@ const About: NextPage = () => {
             </p>
 
             <h3>Our current programmes</h3>  
-            <h4>Creative Newham’s Place Partnerships Programme</h4>         
-            <p>From 2024 onwards, UEL will be leading a programme called ‘Newham’s Place Partnerships’ that is funded by Arts Council England’s Place-based Partnerships fund and other major funders. This is an ambitious Creative Newham programme, of which UEL has been appointed the managing and accountable lead delivery organisation.</p>
+            <h4>The Creative Newham Place Partnership programme</h4>       
+            <p>
+              Following the success of the pilot of our Cultural Producers programme in 2022-23, in November 2023, we received thrilling news of our success in securing funding from Arts Council England's Place-based Partnerships fund to scale up the programme through Newham's Place Partnership programme. This achievement has unlocked support from other major funders like the Royal Docks, NLHF, Foundation for Future London, LLDC, UEL, UCL East and Newham Council. Over the next three years, this funding and support will enable us to deliver two key initiatives:              
+            </p>
+            <p>
+              Firstly, our Cultural Producers training programme will provide residents with access to employment opportunities in the cultural, heritage, and cross-sectoral fields, aligning with Newham's inclusive economy vision, including developments in East Bank and the Royal Docks.
+            </p>
+            <p>
+              Secondly, our Powerful Partnerships strand will strengthen collaboration across sectors, establishing Newham as a beacon of partnership excellence. Through strategic and effective alliance-building, we aim to advocate for the sector's voice both locally and beyond, driving improved cultural mobility in the borough.              
+            </p>
+            <p>
+              This ambitious programme, managed and led by UEL, reflects our vision for a Newham where creative opportunities are accessible to all, regardless of background or circumstance. Over the next decade, we'll address the shortage of local and diverse producers, recognise the multifaceted skills required in the role, and champion the value of creative thinking and activities.              
+            </p>
+           
+            {/* <p>From 2024 onwards, we will be rolling out a programme called ‘Newham’s Place Partnerships’ that is funded by Arts Council England’s Place-based Partnerships fund and other major funders. This is an ambitious Creative Newham programme, of which UEL has been appointed the managing and accountable lead delivery organisation.</p>
             <p>Creative Newham’s 3-year place-based powerful partnerships programme offers </p>
             <p>1. cross-sector <span className="text-cn-orange">Cultural Producers</span> training, giving residents access to cultural, heritage & cross-sectoral employment in Newham’s new inclusive economy including East Bank and Royal Docks.</p>
-            <p>2. a <span className="text-cn-orange">Powerful Partnerships</span> strand that will strengthen Newham's powerful partnership working, resulting in strategic and effective diverse alliance, acknowledged as model of best practice in partnership and having a strong voice for the sector in Newham and beyond through continued joined up strategic working of the membership for the wider benefit of improved cultural mobility in the borough.</p>
+            <p>2. a <span className="text-cn-orange">Powerful Partnerships</span> strand that will strengthen Newham's partnership working, resulting in a strategic and effective diverse alliance. Acknowledged as a model of best partnership practice and having a strong voice for the sector in Newham and beyond, through continued joined up working of the membership, for the wider benefit of improved cultural mobility in the borough.</p>
             <p>The programme’s vision is for a Newham where everyone can benefit from creative opportunities - as makers, producers, leaders, audiences and participants - whatever their background or circumstances.</p>
             <p>Our 10-year vision responds to:</p>
             <ul>
               <li>the dearth of local producers, and diverse producers in particular</li>
               <li>the multifaceted skills required of a producer</li>
               <li>a growing recognition of the value of creative thinking and creative activities</li>
-            </ul>
+            </ul> */}
             <p>The programme was piloted in 2022-23 and known as the <a href="https://rosettaarts.org/projects/creative-newham-cultural-producers-programme-2022-2023/">Creative Newham Cultural Producers</a> programme, which provided a comprehensive training programme to local emerging producers under the age of 30. It included a 45-day placement in a local cultural organisation, classroom-based theory, 1-1 mentoring and regular supervision, with trainees receiving a training bursary (London Living Wage). Previous participating hosts for the 2022 cohort were: <a href="https://bowarts.org/">Bow Arts</a>, <a href="https://codydock.org.uk/">Gasworks Dock Partnership</a> (Cody Dock), <a href="https://www.sustainable-fashion.com/">LCF Centre for Sustainable Fashion</a>, <a href="https://rosettaarts.org/">Rosetta Arts</a>, <a href="https://www.royaldocks.london/">Royal Docks Team</a>, <a href="https://socialconvention.org/">Social Convention</a>, <a href="https://www.stratfordeast.com/">Theatre Royal Stratford East</a>.</p>
-            <p>There will be on-going opportunities to apply to get involved either as a host, a cultural producer, a delivery agent and/or an attendee. All opportunities for alliance members will be posted on our newsletter, which you can access if you are a member. </p>
+            {/* <p>There will be on-going opportunities to apply to get involved either as a host, a cultural producer, a delivery agent and/or an attendee. All opportunities for alliance members will be posted on our newsletter, which you can access if you are a member. </p> */}
+            <p>
+              Crucial to our success is the support and expertise of our member organisations and their leaders. We'll be rolling out various opportunities throughout the programme, so stay tuned for updates by signing up to our member bi-monthly newsletters. To become a member you can <Link href="/join-us/">join us, for free here</Link>.
+            </p>               
+            <h4>Young Creative Newham Board</h4>
             <p>
               The{" "}
               <Link href="https://rosettaarts.org/call-out-join-our-young-creative-newham-board-and-get-your-voice-heard/">
@@ -93,7 +110,7 @@ const About: NextPage = () => {
               </Link>
               .
             </p>
-            <p>
+            {/* <p>
               Following the success of the pilot of our Cultural Producers programme in 2022-23, in November 2023, we received thrilling news of our success in securing funding from Arts Council England's Place-based Partnerships fund to scale up the programme through Newham's Place Partnership programme. This achievement has unlocked support from other major funders like the Royal Docks, NLHF, Foundation for Future London, LLDC, UEL, UCL East and Newham Council. Over the next three years, this funding and support will enable us to deliver two key initiatives:              
             </p>
             <p>
@@ -107,9 +124,13 @@ const About: NextPage = () => {
             </p>
             <p>
               Crucial to our success is the support and expertise of our member organisations and their leaders. We'll be rolling out various opportunities throughout the programme, so stay tuned for updates by signing up to our member bi-monthly newsletters. To become a member you can <Link href="/join-us/">join us, for free here</Link>.
-            </p>
+            </p> */}
 
-            <h3>Our Steering Group</h3>
+          </div>
+        </Panel>
+
+        <Panel title="Our Steering Group" location="body">
+          <div className="cn-text">
             <p>
             Creative Newham is supported by a steering group which meets quarterly and is coordinated by the University of East London. Chaired by Sanaz Amidi, the steering group consists of representatives from eleven local organisations: {" "}
               <Link href="https://certainblacks.com/">Certain Blacks</Link>,{" "}
@@ -142,16 +163,20 @@ const About: NextPage = () => {
                 East Bank
               </Link>
               ,{" "}
-              <Link href="https://www.creativeschools.london/our-story-of-change/">
-                London Legacy Development Corporation and Creative Schools
+              <Link href="https://www.queenelizabetholympicpark.co.uk/legacy-corporation">
+                London Legacy Development Corporation
               </Link>    
-              ,{" "}
+              ,{" "}              
+              <Link href="https://www.creativeschools.london/our-story-of-change/">
+                Creative Schools              
+              </Link>
+              ,{" "}   
               <Link href="https://www.creativeschools.london/elcea/">
                 East London Cultural Education Alliance
               </Link>
               .
-            </p>
-          </div>
+            </p>            
+          </div>        
         </Panel>
 
         {/* Supporters */}
@@ -206,6 +231,8 @@ const About: NextPage = () => {
                 key={logo.title}
                 wrapperClassName="sm:col-span-2" 
               />
+
+              // add royal docs here - before UEL, movee LLD bottom
             ))}
           </div>
         </Panel>        
