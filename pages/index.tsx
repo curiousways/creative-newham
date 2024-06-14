@@ -79,29 +79,25 @@ const Home: NextPage = () => {
 
             <h3>Skills & employment</h3>
             <p>
-              We identify training and employment opportunities for young people
-              and adults, running programmes such as the{" "}
+              We identify opportunities to make a step change in the Newham talent pipeline and create training and employment opportunities for young people and adults, running programmes such as the{" "}
               <Link href="/news/cultural-producers/" passHref>
-                <a target="_blank" rel="noreferrer">
+                <a>
                   Creative Newham Cultural Producers
                 </a>
               </Link>{" "}
               programme and the
               <Link href="/news/creative-newham-youth-board/" passHref>
-                <a target="_blank" rel="noreferrer">
+                <a>
                    Creative Newham Youth Board
                 </a>
               </Link>{" "}
-              which gives 13-18 year olds the chance to have a say in local
-              cultural issues and gain experience in the field{" "}
-              <Link
+              which gives young people and young adults the chance to have a say in local cultural issues and gain experience in the field{" "}
+              <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdL3kVCQUKqVY5JRucSBrHJHVbg25Sl5mSXu77A2RvMoIulQw/viewform "
-                passHref
+                target="_blank" rel="noreferrer"
               >
-                <a target="_blank" rel="noreferrer">
                   (joining details here).
-                </a>
-              </Link>
+              </a>
             </p>
           </div>
 
