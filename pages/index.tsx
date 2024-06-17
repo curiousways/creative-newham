@@ -93,7 +93,7 @@ const Home: NextPage = () => {
               </Link>{" "}
               which gives young people and young adults the chance to have a say in local cultural issues and gain experience in the field{" "}
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdL3kVCQUKqVY5JRucSBrHJHVbg25Sl5mSXu77A2RvMoIulQw/viewform "
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdL3kVCQUKqVY5JRucSBrHJHVbg25Sl5mSXu77A2RvMoIulQw/viewform"
                 target="_blank" rel="noreferrer"
               >
                   (joining details here).
