@@ -14,7 +14,7 @@ const NewsPost = ({ post }: Post) => {
       key={post.title}
       className="flex flex-col overflow-hidden rounded-lg shadow-lg"
     >
-      <div className="flex-shrink-0">
+      <div className="flex-shrink-0 relative">
         <Image
           data={post.featuredImage.responsiveImage}
           priority

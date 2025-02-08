@@ -37,9 +37,9 @@ const Nav = () => {
       <div>
         <Link
           href="/"
-          className="cursor-pointer max-w-[571px]"
+          className="cursor-pointer max-w-[571px] relative"
           aria-label="Creative Newham logo">
-          <Image fill src={Logo} alt="Creative Newham logo" />
+          <Image width="571" height="83" src={Logo} alt="Creative Newham logo" />
         </Link>
       </div>
       <div>

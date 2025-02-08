@@ -30,12 +30,14 @@ const Home: NextPage = () => {
 
         <Panel title="What we do">
           <div className="cn-text">
-            <Image
-              fill
-              className="cn-image cn-image--stylised rounded-3xl"
-              src={FeaturedImg}
-              alt="Creative Newham logo"
-            />
+            <div className="aspect-[3/2] relative mb-8">
+              <Image
+                fill
+                className="cn-image cn-image--stylised rounded-3xl"
+                src={FeaturedImg}
+                alt=""
+              />
+            </div>
 
             <p>
               We work to make Newham's creative vision real for everyone in the
