@@ -7,11 +7,9 @@ type ButtonProps = {
 
 const Button = ({ text, link }: ButtonProps) => {
   return (
-    <Link href={link || ""} passHref>
-      <a className="cn-btn">
-        {text}
-      </a>
-    </Link>
+    (<Link href={link || ""} passHref className="cn-btn">
+      {text}
+    </Link>)
   );
 };
 

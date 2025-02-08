@@ -11,7 +11,7 @@ const Home: NextPage = () => {
   let viewportConfig = { once: true };
 
   return (
-    <main className="container">
+    (<main className="container">
       <div className="space-y-20">
         <motion.p
           initial="hidden"
@@ -81,16 +81,12 @@ const Home: NextPage = () => {
             <h3>Skills & employment</h3>
             <p>
               We identify opportunities to make a step change in the Newham talent pipeline and create training and employment opportunities for young people and adults, running programmes such as the{" "}
-              <Link href="/news/cultural-producers/" passHref>
-                <a>
-                  Creative Newham Cultural Producers
-                </a>
+              <Link href="/news/cultural-producers/">
+                Creative Newham Cultural Producers
               </Link>{" "}
               programme and the
-              <Link href="/news/creative-newham-youth-board/" passHref>
-                <a>
-                   Creative Newham Youth Board
-                </a>
+              <Link href="/news/creative-newham-youth-board/">
+                Creative Newham Youth Board
               </Link>{" "}
               which gives young people and young adults the chance to have a say in local cultural issues and gain experience in the field{" "}
               <a
@@ -107,7 +103,7 @@ const Home: NextPage = () => {
           </div>
         </Panel>
       </div>
-    </main>
+    </main>)
   );
 };
 

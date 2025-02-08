@@ -10,7 +10,7 @@ type Post = {
 
 const NewsPost = ({ post }: Post) => {
   return (
-    <div
+    (<div
       key={post.title}
       className="flex flex-col overflow-hidden rounded-lg shadow-lg"
     >
@@ -27,10 +27,8 @@ const NewsPost = ({ post }: Post) => {
             href={`/news/${post.slug}`}
             className="mt-2 block hover:text-cn-orange"
           >
-            <a className="no-underline">
-              <p className="text-2xl leading-tight">{post.title}</p>
-              <p className="mt-3 text-base">{post.summary}</p>
-            </a>
+            <p className="text-2xl leading-tight">{post.title}</p>
+            <p className="mt-3 text-base">{post.summary}</p>
           </Link>
         </div>
         <div className="mt-6">
@@ -39,7 +37,7 @@ const NewsPost = ({ post }: Post) => {
           </a>
         </div>
       </div>
-    </div>
+    </div>)
   );
 };
 

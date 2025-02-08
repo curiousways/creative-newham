@@ -36,11 +36,10 @@ const About: NextPage = () => {
             <Link
               href="http://newhamdata.wpengine.com/wp-content/uploads/2017/06/Demography-Bulletin-October-2015-IMD.pdf"
               passHref
-            >
-              <a target="_blank" rel="noreferrer">
+              target="_blank"
+              rel="noreferrer">
                 2nd to the 25th most deprived borough in Britain between 2010
                 and 2015
-              </a>
             </Link>
             , Newham residents are still amongst some of the most
             disadvantaged in the UK.

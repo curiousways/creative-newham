@@ -39,13 +39,11 @@ const ImageLink: React.FC<ImageLinkProps> = (props) => {
     .join(" ");
 
   return (
-    <div className={wrapperClass}>
-      <Link href={props.link}>
-        <a target="_blank" rel="noreferrer" aria-label={props.alt}>
-          <Image fill className={imgClass} src={props.image} alt={props.alt} />
-        </a>
+    (<div className={wrapperClass}>
+      <Link href={props.link} target="_blank" rel="noreferrer" aria-label={props.alt}>
+        <Image fill className={imgClass} src={props.image} alt={props.alt} />
       </Link>
-    </div>
+    </div>)
   );
 };
 
