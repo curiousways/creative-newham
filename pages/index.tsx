@@ -4,8 +4,8 @@ import { item } from "@/lib/animations";
 import Button from "@/components/Button";
 import Panel from "@/components/panel/Panel";
 import Link from "next/link";
-import Image from "next/image";
 import FeaturedImg from "../public/assets/images/featured_img_home.jpg";
+import { HeroImage } from "@/components/HeroImage";
 
 const Home: NextPage = () => {
   let viewportConfig = { once: true };
@@ -29,16 +29,8 @@ const Home: NextPage = () => {
         </motion.p>
 
         <Panel title="What we do">
+          <HeroImage src={FeaturedImg} />
           <div className="cn-text">
-            <div className="aspect-[3/2] relative mb-8">
-              <Image
-                fill
-                className="cn-image cn-image--stylised rounded-3xl"
-                src={FeaturedImg}
-                alt=""
-              />
-            </div>
-
             <p>
               We work to make Newham's creative vision real for everyone in the
               borough. We’ll make sure that cultural activities involve us all

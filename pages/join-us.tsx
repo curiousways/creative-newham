@@ -4,9 +4,9 @@ import type { NextPage } from "next";
 
 import { NextSeo } from "next-seo";
 import axios from "axios";
-import Image from "next/image";
 import FeaturedImg from "../public/assets/images/featured_img_join.jpg";
 import Panel from "@/components/panel/Panel";
+import { HeroImage } from "@/components/HeroImage";
 
 const Membership: NextPage = () => {
   const [inNewham, setInNewham] = useState("");
@@ -69,14 +69,8 @@ const Membership: NextPage = () => {
       <main className="container">
         <div className="space-y-20">
           <Panel title="Join Us">
+            <HeroImage src={FeaturedImg} />
             <div className="cn-text">
-              <Image
-                fill
-                className="cn-image cn-image--stylised rounded-3xl"
-                src={FeaturedImg}
-                alt="Creative Newham logo"
-              />
-
               <p>
                 Joining the Creative Newham alliance is free. To become a member
                 and receive our quarterly newsletter, we ask that you are:

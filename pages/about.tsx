@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import Link from "next/link";
 import { NextSeo } from "next-seo";
-import Image from "next/image";
 import ImageLink from "@/components/ImageLink";
 import Panel from "@/components/panel/Panel";
 import { supporters } from "../data/data";
@@ -9,6 +8,7 @@ import FeaturedImg from "../public/assets/images/featured_img.jpg";
 import WestFieldEastBank from "../public/assets/images/westfield_east_bank_creative_futures_fund.png";
 import WestfieldCityStratford from "../public/assets/images/westfield_city_stratford.jpg";
 import FoundationForLondon from "../public/assets/images/foundation-for-future-london.png";
+import { HeroImage } from "@/components/HeroImage";
 
 const About: NextPage = () => {
   return (<>
@@ -21,13 +21,8 @@ const About: NextPage = () => {
     />
     <main className="container">
       <Panel title="Our story">
+        <HeroImage src={FeaturedImg} />
         <div className="cn-text">
-          <Image
-            fill
-            className="cn-image cn-image--stylised rounded-3xl"
-            src={FeaturedImg}
-            alt="Creative Newham logo"
-          />
           <p>Creative Newham began in 2018, as a result of Arts Council England’s Creative People & Places opportunity, which Newham partners seized with enthusiasm across the borough. Through the process of developing this bid, cultural leader Sanaz Amidi, who was Chief Exec of Rosetta Arts until 2023 (established in 1993, with a long history of delivering community arts in Newham) brought together over 80 individuals representing over 60 organisations, all sharing a commitment to empowering borough residents to realise their full cultural and creative potential. In September 2019, Creative Newham was formalised with Sanaz Amidi as Chair and since then, the alliance has continued to grow.</p>
           <h3>Why Creative Newham?</h3>
           <p>
