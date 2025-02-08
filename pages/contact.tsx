@@ -22,6 +22,7 @@ const Contact: NextPage = () => {
       <main className="container">
         <Panel title="Contact">
           <Image
+            fill
             className="cn-image cn-image--stylised rounded-3xl"
             src={FeaturedImg}
             alt="Creative Newham logo"

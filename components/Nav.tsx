@@ -40,7 +40,7 @@ const Nav = () => {
             className="cursor-pointer max-w-[571px]"
             aria-label="Creative Newham logo"
           >
-            <Image src={Logo} alt="Creative Newham logo" />
+            <Image fill src={Logo} alt="Creative Newham logo" />
           </a>
         </Link>
       </div>

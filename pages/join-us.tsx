@@ -71,6 +71,7 @@ const Membership: NextPage = () => {
           <Panel title="Join Us">
             <div className="cn-text">
               <Image
+                fill
                 className="cn-image cn-image--stylised rounded-3xl"
                 src={FeaturedImg}
                 alt="Creative Newham logo"
