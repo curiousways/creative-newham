@@ -25,16 +25,16 @@ const NewsPost = ({ post }: Post) => {
         <div className="flex-1">
           <Link
             href={`/news/${post.slug}`}
-            className="mt-2 block hover:text-cn-orange"
+            className="mt-2 block hover:text-cn-orange no-underline"
           >
             <p className="text-2xl leading-tight">{post.title}</p>
             <p className="mt-3 text-base">{post.summary}</p>
           </Link>
         </div>
         <div className="mt-6">
-          <a className="hover:text-cn-orange" href={`/news/${post.slug}`}>
+          <Link className="hover:text-cn-orange" href={`/news/${post.slug}`}>
             View article
-          </a>
+          </Link>
         </div>
       </div>
     </div>)
