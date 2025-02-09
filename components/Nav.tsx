@@ -28,7 +28,7 @@ const navItems = [
 
 const Nav = () => {
   return (
-    (<motion.div
+    <motion.div
       initial={{ opacity: 0, y: -10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
@@ -51,8 +51,8 @@ const Nav = () => {
           ))}
         </ul>
       </div>
-    </motion.div>)
-  );
+    </motion.div>
+  )
 };
 
 export default Nav;
