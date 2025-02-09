@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 type NavLinkProps = { href: string; children: ReactNode};
 
@@ -20,9 +21,9 @@ function NavLink({ children, href }: NavLinkProps) {
   };
 
   return (
-    <a href={href} onClick={handleClick} className={styles}>
+    <Link href={href} onClick={handleClick} className={styles}>
       {children}
-    </a>
+    </Link>
   );
 }
 
