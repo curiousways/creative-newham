@@ -1,14 +1,12 @@
 import Link from "next/link";
-
 import { Image } from "react-datocms";
+import { Post } from "@/lib/types";
 
-import { Post as NewsPost } from "@/lib/types";
-
-type Post = {
-  post: NewsPost;
+type NewsPostProps = {
+  post: Post;
 };
 
-const NewsPost = ({ post }: Post) => {
+const NewsPost = ({ post }: NewsPostProps) => {
   return (
     (<div
       key={post.title}
