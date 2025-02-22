@@ -1,17 +1,17 @@
 import type { NextPage } from "next";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { item } from "@/lib/animations";
 import Button from "@/components/Button";
 import Panel from "@/components/panel/Panel";
 import Link from "next/link";
-import Image from "next/image";
 import FeaturedImg from "../public/assets/images/featured_img_home.jpg";
+import { HeroImage } from "@/components/HeroImage";
 
 const Home: NextPage = () => {
   let viewportConfig = { once: true };
 
   return (
-    <main className="container">
+    (<main className="container">
       <div className="space-y-20">
         <motion.p
           initial="hidden"
@@ -29,13 +29,8 @@ const Home: NextPage = () => {
         </motion.p>
 
         <Panel title="What we do">
+          <HeroImage src={FeaturedImg} />
           <div className="cn-text">
-            <Image
-              className="cn-image cn-image--stylised rounded-3xl"
-              src={FeaturedImg}
-              alt="Creative Newham logo"
-            />
-
             <p>
               We work to make Newham's creative vision real for everyone in the
               borough. We’ll make sure that cultural activities involve us all
@@ -80,16 +75,12 @@ const Home: NextPage = () => {
             <h3>Skills & employment</h3>
             <p>
               We identify opportunities to make a step change in the Newham talent pipeline and create training and employment opportunities for young people and adults, running programmes such as the{" "}
-              <Link href="/news/cultural-producers/" passHref>
-                <a>
-                  Creative Newham Cultural Producers
-                </a>
+              <Link href="/news/cultural-producers/">
+                Creative Newham Cultural Producers
               </Link>{" "}
               programme and the
-              <Link href="/news/creative-newham-youth-board/" passHref>
-                <a>
-                   Creative Newham Youth Board
-                </a>
+              <Link href="/news/creative-newham-youth-board/">
+                Creative Newham Youth Board
               </Link>{" "}
               which gives young people and young adults the chance to have a say in local cultural issues and gain experience in the field{" "}
               <a
@@ -106,7 +97,7 @@ const Home: NextPage = () => {
           </div>
         </Panel>
       </div>
-    </main>
+    </main>)
   );
 };
 

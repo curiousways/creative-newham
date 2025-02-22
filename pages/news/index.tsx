@@ -1,7 +1,6 @@
 import type { NextPage, GetStaticProps } from "next";
-import Link from "next/link";
 
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { NextSeo } from "next-seo";
 
 import { item } from "@/lib/animations";

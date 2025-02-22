@@ -1,20 +1,18 @@
 import Link from "next/link";
-
 import { Image } from "react-datocms";
+import { Post } from "@/lib/types";
 
-import { Post as NewsPost } from "@/lib/types";
-
-type Post = {
-  post: NewsPost;
+type NewsPostProps = {
+  post: Post;
 };
 
-const NewsPost = ({ post }: Post) => {
+const NewsPost = ({ post }: NewsPostProps) => {
   return (
-    <div
+    (<div
       key={post.title}
       className="flex flex-col overflow-hidden rounded-lg shadow-lg"
     >
-      <div className="flex-shrink-0">
+      <div className="flex-shrink-0 relative">
         <Image
           data={post.featuredImage.responsiveImage}
           priority
@@ -25,21 +23,19 @@ const NewsPost = ({ post }: Post) => {
         <div className="flex-1">
           <Link
             href={`/news/${post.slug}`}
-            className="mt-2 block hover:text-cn-orange"
+            className="mt-2 block hover:text-cn-orange no-underline"
           >
-            <a className="no-underline">
-              <p className="text-2xl leading-tight">{post.title}</p>
-              <p className="mt-3 text-base">{post.summary}</p>
-            </a>
+            <p className="text-2xl leading-tight">{post.title}</p>
+            <p className="mt-3 text-base">{post.summary}</p>
           </Link>
         </div>
         <div className="mt-6">
-          <a className="hover:text-cn-orange" href={`/news/${post.slug}`}>
+          <Link className="hover:text-cn-orange" href={`/news/${post.slug}`}>
             View article
-          </a>
+          </Link>
         </div>
       </div>
-    </div>
+    </div>)
   );
 };
 

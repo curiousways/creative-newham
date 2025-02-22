@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 import NavLink from "./NavLink";
 
@@ -35,16 +35,13 @@ const Nav = () => {
       className="container--wide pt-[25px] pb-[35px] sm:py-[84px] relative xl:flex justify-between items-end"
     >
       <div>
-        <Link href="/" passHref>
-          <a
-            className="cursor-pointer max-w-[571px]"
-            aria-label="Creative Newham logo"
-          >
-            <Image src={Logo} alt="Creative Newham logo" />
-          </a>
+        <Link
+          href="/"
+          className="cursor-pointer max-w-[571px] relative"
+          aria-label="Creative Newham logo">
+          <Image width="571" height="83" src={Logo} alt="Creative Newham logo" />
         </Link>
       </div>
-
       <div>
         <ul className="flex space-x-5 mt-2 sm:mt-5 xl:mt-0">
           {navItems.map((item) => (
@@ -55,7 +52,7 @@ const Nav = () => {
         </ul>
       </div>
     </motion.div>
-  );
+  )
 };
 
 export default Nav;
